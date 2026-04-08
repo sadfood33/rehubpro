@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Снятие ломки в Химках: быстрое облегчение симптомов, без боли, 24/7</title>
+  <meta name="description" content="Снятие ломки на дому в Химках. Обезболивание, снотворное, восстановление состояния за 1 час. Анонимно. Выезд врача за 25 минут. Звоните +7 (499) 648-56-58.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/khimki/snyatie-lomki.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Снятие ломки в Химках: быстрое облегчение симптомов">
+  <meta property="og:description" content="Убираем боль, тошноту, тремор. Восстанавливаем сон. Анонимно. 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/khimki/snyatie-lomki.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .section-title { font-size:2rem; font-weight:800; text-align:center; margin-bottom:0.8rem; color:var(--primary-dark); }
+    .section-subtitle { text-align:center; color:var(--text-light); margin-bottom:2.5rem; max-width:750px; margin-inline:auto; }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* HERO */
+    .hero { background:linear-gradient(rgba(30,58,138,0.88), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80') center/cover; color:#fff; padding:70px 0; }
+    .hero-content { display:grid; grid-template-columns:1.1fr 1fr; gap:30px; align-items:center; }
+    .hero h1 { font-size:2.5rem; font-weight:900; line-height:1.15; margin-bottom:16px; }
+    .hero-features { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; }
+    .feature-tag { background:rgba(255,255,255,0.2); padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.3); }
+    
+    /* CALL CARD */
+    .hero-contact-card { background:#fff; padding:28px; border-radius:var(--radius); color:var(--text); box-shadow:0 12px 35px rgba(0,0,0,0.25); text-align:center; }
+    .hero-contact-card h3 { font-size:1.3rem; font-weight:800; margin-bottom:10px; color:var(--primary-dark); }
+    .hero-contact-card p { font-size:14px; color:var(--text-light); margin-bottom:16px; }
+    .phone-display { font-size:1.6rem; font-weight:800; color:var(--primary); margin-bottom:14px; display:block; transition:0.3s; }
+    .phone-display:hover { color:var(--accent); }
+    .urgency-badge { background:#fee2e2; color:#b91c1c; padding:8px; border-radius:6px; font-size:12px; font-weight:700; margin-top:12px; display:none; }
+    .urgency-badge.active { display:block; animation:pulse 1.5s infinite; }
+
+    /* CONTENT TEXT */
+    .text-content h2 { font-size:1.7rem; font-weight:800; color:var(--primary-dark); margin:32px 0 16px; }
+    .text-content h3 { font-size:1.3rem; font-weight:700; color:var(--text); margin:24px 0 12px; }
+    .text-content p { margin-bottom:16px; font-size:16px; color:var(--text-light); line-height:1.75; }
+    .text-content ul, .text-content ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .text-content li { margin-bottom:8px; line-height:1.7; }
+    .highlight-box { background:#eff6ff; border-left:4px solid var(--primary); padding:18px; border-radius:0 8px 8px 0; margin:24px 0; }
+    .highlight-box strong { color:var(--primary-dark); }
+    
+    /* PRICE TABLE */
+    .price-table { width:100%; border-collapse:collapse; margin:24px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:var(--shadow); }
+    .price-table th, .price-table td { padding:16px; text-align:left; border-bottom:1px solid #e5e7eb; }
+    .price-table th { background:var(--primary); color:#fff; font-weight:700; }
+    .price-table tr:hover { background:#f8fafc; }
+    .price-val { font-weight:800; color:var(--primary); }
+
+    /* INLINE CTA */
+    .inline-cta {
+      background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color:#fff; padding:32px; border-radius:12px; margin:40px 0; text-align:center;
+      box-shadow:0 10px 30px rgba(37,99,235,0.3);
+    }
+    .inline-cta h3 { font-size:1.6rem; font-weight:800; margin-bottom:10px; }
+    .inline-cta p { font-size:16px; opacity:0.95; margin-bottom:20px; }
+    .inline-cta .phone-big { font-size:2rem; font-weight:900; display:block; margin-bottom:16px; color:#fff; }
+    .inline-cta .btn-white { background:#fff; color:var(--primary); font-weight:800; padding:16px 32px; font-size:16px; }
+
+    /* SERVICES */
+    .services-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; }
+    .service-card { background:#fff; padding:20px; border-radius:var(--radius); border:1px solid #e5e7eb; transition:0.3s; position:relative; overflow:hidden; display:block; }
+    .service-card::before { content:''; position:absolute; top:0; left:0; width:4px; height:0; background:var(--primary); transition:0.3s; }
+    .service-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); border-color:var(--primary); }
+    .service-card:hover::before { height:100%; }
+    .service-card h3 { font-size:1.1rem; font-weight:800; margin-bottom:6px; color:var(--primary-dark); }
+    .service-card p { font-size:13px; color:var(--text-light); margin-bottom:10px; }
+    .service-link { color:var(--primary); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:4px; }
+    .service-link:hover { color:var(--accent); gap:8px; }
+
+    /* CITIES */
+    .cities-module { background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:60px 0; text-align:center; }
+    .cities-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; max-width:900px; margin:0 auto; }
+    .city-badge { background:#f0f7ff; color:var(--primary-dark); padding:10px 18px; border-radius:24px; font-weight:600; font-size:14px; border:1px solid #dbeafe; transition:0.2s; display:inline-flex; align-items:center; gap:6px; cursor:pointer; }
+    .city-badge:hover { background:var(--primary); color:#fff; border-color:var(--primary); transform:translateY(-2px); box-shadow:0 4px 12px rgba(37,99,235,0.2); }
+    .city-badge.active { background:var(--primary); color:#fff; border-color:var(--primary); }
+    .city-more { background:#e2e8f0; color:var(--text-light); padding:10px 18px; border-radius:24px; font-weight:600; font-size:14px; border:1px dashed #cbd5e1; display:inline-flex; align-items:center; margin-top:4px; }
+
+    /* PROCESS & TRUST */
+    .process-grid, .trust-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; text-align:center; }
+    .step, .trust-card { background:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid #e5e7eb; transition:0.3s; }
+    .step:hover, .trust-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-hover); }
+    .step-num { width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; margin:0 auto 10px; }
+    .trust-card { text-align:left; position:relative; overflow:hidden; }
+    .trust-card::before { content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--primary); opacity:0; transition:0.3s; }
+    .trust-card:hover::before { opacity:1; }
+    .trust-icon { width:48px; height:48px; background:#eff6ff; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:14px; }
+    .trust-card h4 { font-size:16px; font-weight:700; margin-bottom:6px; }
+    .trust-card p { font-size:13px; color:var(--text-light); line-height:1.5; }
+
+    /* FAQ */
+    .faq-item { background:#fff; border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid #e5e7eb; }
+    .faq-q { padding:16px 18px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:0.2s; user-select:none; }
+    .faq-q:hover { color:var(--primary); background:#fafbfc; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease-out, padding 0.35s; padding:0 18px; font-size:14px; color:var(--text-light); line-height:1.6; }
+    .faq-a.open { max-height:400px; padding-bottom:16px; }
+    .faq-icon { transition:0.3s; font-size:16px; color:var(--text-light); }
+    .faq-icon.open { transform:rotate(180deg); color:var(--primary); }
+
+    /* CTA & FOOTER */
+    .cta-section { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 90px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call {
+      position:fixed; bottom:24px; right:24px; z-index:999;
+      display:flex; flex-direction:column; align-items:flex-end; gap:8px;
+    }
+    .sticky-tooltip {
+      background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px;
+      font-size:11px; font-weight:600; white-space:nowrap; opacity:0;
+      transform:translateY(4px); transition:0.3s; pointer-events:none;
+    }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn {
+      width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff;
+      display:flex; align-items:center; justify-content:center; font-size:24px;
+      box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite;
+      transition:0.3s;
+    }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring {
+      0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); }
+      70% { box-shadow:0 0 0 14px rgba(245,158,11,0); }
+      100% { box-shadow:0 0 0 0 rgba(245,158,11,0); }
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .hero-content { grid-template-columns:1fr; text-align:center; }
+      .hero-features, .hero-buttons { justify-content:center; }
+      .cities-badges { justify-content:center; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+      .inline-cta .phone-big { font-size:1.5rem; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+      .section-title { font-size:1.6rem; }
+      .hero h1 { font-size:1.9rem; }
+      .hero-contact-card { padding:20px; }
+      .cta-buttons { flex-direction:column; }
+      .btn { width:100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-50-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="/blog/">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="/">Главная</a> <span>/</span> <a href="/khimki.html">Химки</a> <span>/</span> <span>Снятие ломки</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h1>Снятие ломки в Химках: быстрое облегчение боли, тошноты и тремора на дому</h1>
+          <div class="hero-features">
+            <span class="feature-tag">💊 Обезболивание за 30 мин</span>
+            <span class="feature-tag">💤 Восстановление сна</span>
+            <span class="feature-tag">✅ Анонимно, без учета</span>
+          </div>
+          <p style="font-size:17px; opacity:0.95; max-width:640px; margin-bottom:24px; line-height:1.6;">
+            Профессиональное снятие абстинентного синдрома. Убираем физическую боль, тревогу и озноб. Врач приедет с набором сильных препаратов для быстрого облегчения.
+          </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;" class="hero-buttons">
+            <a href="tel:+74996485658" class="btn btn-primary">📞 Вызвать врача</a>
+            <a href="#details" class="btn btn-outline">Подробнее об услуге</a>
+          </div>
+        </div>
+        <div class="hero-contact-card">
+          <h3>📞 Диспетчерская Химки</h3>
+          <p>Ответим за 15 секунд. Анонимно. Без выходных.</p>
+          <a href="tel:+74996485658" class="phone-display">+7 (499) 648-56-58</a>
+          <a href="tel:+74996485658" class="btn btn-primary" style="width:100%; font-size:16px;">Позвонить сейчас</a>
+          <div class="urgency-badge active" id="urgBadge">⏱️ Свободных врачей в Химках: 4. Ожидание ~25 мин</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INLINE CTA #1 -->
+    <section style="padding:40px 0; background:#fff;">
+      <div class="container">
+        <div class="inline-cta">
+          <h3>⚡ Невозможно терпеть?</h3>
+          <p>Не мучайте себя. Врач снимет симптомы за час.</p>
+          <a href="tel:+74996485658" class="phone-big">+7 (499) 648-56-58</a>
+          <a href="tel:+74996485658" class="btn btn-white">📞 Вызвать врача</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section id="details">
+      <div class="container text-content">
+        <h2 class="section-title">Профессиональное снятие абстинентного синдрома</h2>
+        <p class="section-subtitle">Быстрое облегчение симптомов. Безопасно, анонимно, эффективно.</p>
+        
+        <div style="max-width:850px; margin:0 auto;">
+          <h2>Что такое ломка и как мы ее снимаем</h2>
+          <p>Ломка (абстинентный синдром) — это тяжелое состояние организма при отмене психоактивных веществ (алкоголь, наркотики). Она сопровождается невыносимой болью в мышцах и суставах, тошнотой, скачками давления, тремором и чувством панического страха.</p>
+          <p>В Химках мы ежедневно выезжаем на вызовы для снятия ломки. Наша задача — не просто "поставить капельницу", а быстро купировать болевой синдром, восстановить сон и стабилизировать психику пациента.</p>
+          
+          <div class="highlight-box">
+            <strong>⚠️ Важно:</strong> Терпеть ломку опасно для жизни. Высокое давление и обезвоживание могут привести к инсульту или инфаркту. Не ждите, звоните сразу.
+          </div>
+
+          <h2>Методы снятия ломки в Химках</h2>
+          <p>В зависимости от тяжести состояния врач применяет комбинированный подход:</p>
+          <ul>
+            <li><strong>Обезболивание:</strong> Введение анальгетиков и спазмолитиков для снятия мышечной и головной боли.</li>
+            <li><strong>Детоксикация:</strong> Капельницы с солевыми растворами, витаминами и гепатопротекторами для вывода токсинов.</li>
+            <li><strong>Седация:</strong> Препараты для нормализации сна и снятия тревожности. Пациент сможет выспаться без кошмаров.</li>
+            <li><strong>Поддержка сердца:</strong> Препараты для нормализации ритма и давления.</li>
+          </ul>
+
+          <h2>Тарифы на снятие ломки в Химках</h2>
+          <table class="price-table">
+            <tr><th>Тариф</th><th>Состав</th><th>Стоимость</th></tr>
+            <tr><td><strong>Легкая</strong></td><td>Обезболивание, снотворное, витамины.</td><td>от 3 500 ₽</td></tr>
+            <tr><td><strong>Средняя</strong></td><td>Капельница, сильные анальгетики, коррекция давления.</td><td>от 5 500 ₽</td></tr>
+            <tr><td><strong>Тяжелая</strong></td><td>Инфузия 3-4 флакона, мощная седация, мониторинг.</td><td>от 8 000 ₽</td></tr>
+          </table>
+
+          <h2>Как проходит процедура</h2>
+          <ol>
+            <li><strong>Осмотр:</strong> Врач измеряет давление, пульс, оценивает состояние.</li>
+            <li><strong>Инъекция:</strong> Для быстрого облегчения боли врач делает внутривенный или внутримышечный укол ("укол трезвости"). Облегчение наступает через 15-20 минут.</li>
+            <li><strong>Капельница:</strong> Устанавливается система для длительного выведения токсинов и восстановления водного баланса.</li>
+            <li><strong>Сон:</strong> Пациент засыпает. Врач остается рядом для контроля состояния.</li>
+          </ol>
+          
+          <h2>Почему нельзя снимать ломку самостоятельно</h2>
+          <p>Многие пытаются спастись народными средствами или аптечными таблетками. Это часто приводит к обратному эффекту: нагрузка на печень возрастает, а токсины остаются в организме. Врач использует специализированные препараты, которые работают комплексно: очищают кровь, обезболивают и защищают внутренние органы.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INLINE CTA #2 -->
+    <section style="padding:40px 0; background:linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);">
+      <div class="container">
+        <div class="inline-cta">
+          <h3>🏥 Профессиональная помощь рядом</h3>
+          <p>Лицензированные врачи, современное оборудование, анонимность</p>
+          <a href="tel:+74996485658" class="phone-big">+7 (499) 648-56-58</a>
+          <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+            <a href="tel:+74996485658" class="btn btn-white">📞 Позвонить</a>
+            <a href="#process" class="btn btn-outline" style="border-color:#fff; color:#fff;">Как работаем</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 SERVICES -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Комплексная медицинская помощь в Химках</h2>
+        <p class="section-subtitle">12 направлений помощи на дому и в стационарах. Протоколы Минздрава РФ, сертифицированные препараты.</p>
+        <div class="services-grid">
+          <a href="/khimki/vyvod-iz-zapoya.html" class="service-card"><h3>🩸 Вывод из запоя</h3><p>Инфузионная терапия, контроль ЭКГ и АД.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/kodirovanie.html" class="service-card"><h3>🛡️ Кодирование</h3><p>Фармакологические и психотерапевтические методы.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/detoksikatsiya.html" class="service-card"><h3>💧 Детоксикация</h3><p>Экспресс-очищение за 2 часа.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/statsionar.html" class="service-card"><h3>🏥 Стационар на дому</h3><p>Круглосуточное наблюдение, инфузоматы.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/vyezd-brigady.html" class="service-card"><h3>🚗 Выезд бригады</h3><p>Врач + фельдшер. Оперативная логистика.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/narkolog-na-dom.html" class="service-card"><h3>👨‍️ Врач на дом</h3><p>Первичный осмотр, оценка тяжести, план терапии.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/pomoshch-pri-otravlenii.html" class="service-card"><h3>⚠️ Помощь при отравлении</h3><p>Снятие интоксикации, антидоты.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/pomoshch-pri-peredozirovke.html" class="service-card"><h3>🆘 Передозировка</h3><p>Экстренная реанимация на выезде.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/snyatie-lomki.html" class="service-card" style="border-color:var(--primary);"><h3>💉 Снятие ломки</h3><p>Купирование абстиненции, седативная терапия.</p><span class="service-link">Вы здесь</span></a>
+          <a href="/khimki/ekspress-detoks.html" class="service-card"><h3>⚡ Экспресс-детокс</h3><p>Быстрое восстановление после праздников.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/psikhologicheskaya-pomoshch.html" class="service-card"><h3>🧠 Психологическая помощь</h3><p>Мотивация на лечение, сессии, поддержка семьи.</p><span class="service-link">Подробнее</span></a>
+          <a href="/khimki/reabilitatsiya.html" class="service-card"><h3>🌱 Реабилитация</h3><p>Пост-стационар, группы поддержки, сопровождение.</p><span class="service-link">Подробнее</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <h2 class="section-title">Как мы снимаем ломку в Химках</h2>
+        <p class="section-subtitle">Прозрачный алгоритм от звонка до облегчения состояния.</p>
+        <div class="process-grid">
+          <div class="step"><div class="step-num">1</div><h4>Заявка</h4><p>Диспетчер уточняет симптомы. Подбирает бригаду.</p></div>
+          <div class="step"><div class="step-num">2</div><h4>Выезд</h4><p>Врач приезжает за 25-35 минут.</p></div>
+          <div class="step"><div class="step-num">3</div><h4>Обезболивание</h4><p>Укол или капельница. Облегчение через 20 мин.</p></div>
+          <div class="step"><div class="step-num">4</div><h4>Восстановление</h4><p>Здоровый сон, очищение организма.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / E-E-A-T -->
+    <section style="background:linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);">
+      <div class="container">
+        <h2 class="section-title">Почему нам доверяют в Химках</h2>
+        <p class="section-subtitle">Работаем строго по клиническим рекомендациям. Все процедуры проводят врачи с действующей аккредитацией.</p>
+        <div class="trust-grid">
+          <div class="trust-card"><div class="trust-icon">🔒</div><h4>100% Анонимность</h4><p>Не ставим на учёт. Данные не передаются в гос. реестры. Машины без шашечек.</p></div>
+          <div class="trust-card"><div class="trust-icon">📜</div><h4>Лицензированные партнёры</h4><p>Сотрудничаем только с клиниками, имеющими действующую лицензию Минздрава РФ.</p></div>
+          <div class="trust-card"><div class="trust-icon">⏱️</div><h4>Срочный выезд</h4><p>Дежурные посты в городе и области. Прибытие от 25 мин.</p></div>
+          <div class="trust-card"><div class="trust-icon">💊</div><h4>Доказательная медицина</h4><p>Протоколы соответствуют рекомендациям Минздрава и WHO. Без гомеопатии.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Частые вопросы по снятию ломки</h2>
+        <div id="faqList">
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Как быстро наступает облегчение?<span class="faq-icon">▼</span></div><div class="faq-a">После введения препаратов первые улучшения наступают через 15-20 минут. Полное облегчение и возможность поспать — через 40-60 минут.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Будет ли больно от укола?<span class="faq-icon">▼</span></div><div class="faq-a">Нет. Мы используем тонкие иглы и современные техники введения. Дискомфорт минимален.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Можно ли снять ломку анонимно?<span class="faq-icon">▼</span></div><div class="faq-a">Да. Мы гарантируем полную конфиденциальность. Врач приезжает на гражданской машине, данные не передаются в диспансер.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Помогает ли это при наркотической ломке?<span class="faq-icon">▼</span></div><div class="faq-a">Да, наши врачи имеют опыт работы с абстинентным синдромом разной этиологии. Врач подберет безопасную схему лечения.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL CITIES BLOCK -->
+    <section class="cities-module">
+      <div class="container">
+        <h2 class="section-title">Также выезжаем в соседние города</h2>
+        <p class="section-subtitle">Работаем без выходных. Подбираем ближайшую бригаду для минимального времени ожидания.</p>
+        <div class="cities-badges">
+          <a href="/balashikha.html" class="city-badge">Балашиха</a>
+          <a href="/khimki.html" class="city-badge active">Химки (вы)</a>
+          <a href="/dmitrov.html" class="city-badge">Дмитров</a>
+          <a href="/korolyov.html" class="city-badge">Королёв</a>
+          <a href="/domodedovo.html" class="city-badge">Домодедово</a>
+          <a href="/yaroslavl.html" class="city-badge">Ярославль</a>
+          <a href="/rybinsk.html" class="city-badge">Рыбинск</a>
+          <a href="/tutaev.html" class="city-badge">Тутаев</a>
+          <a href="/uglich.html" class="city-badge">Углич</a>
+          <a href="/pereslavl-zalesskiy.html" class="city-badge">Переславль</a>
+          <span class="city-more">+ ещё 50 городов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA (CALL ONLY) -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="margin-bottom:12px;">🚑 Не откладывайте помощь</h2>
+        <p style="max-width:600px; margin:0 auto 20px; opacity:0.95;">Бригада уже свободна в вашем районе. Анонимно. Без предоплаты. Звоните прямо сейчас!</p>
+        <a href="tel:+74996485658" class="phone-display" style="color:#fff; font-size:2.2rem; margin-bottom:20px; display:block; font-weight:900;">+7 (499) 648-56-58</a>
+        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;" class="cta-buttons">
+          <a href="tel:+74996485658" class="btn btn-primary btn-lg" style="background:#fff; color:var(--primary);">📞 Позвонить сейчас</a>
+          <a href="/khimki.html" class="btn btn-outline btn-lg" style="color:#fff; border-color:#fff;">Другие услуги в Химках</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px; opacity:0.9;">⏱️ Среднее время ответа: 15 секунд | 🚗 Время прибытия: 25-35 минут</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY ROUND CALL BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:+74996485658" class="sticky-btn" aria-label="Позвонить">📞</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Контакты</h4><a href="tel:+74996485658">+7 (499) 648-56-58</a><a href="mailto:info@tyspas.ru">info@tyspas.ru</a><p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p></div>
+        <div class="footer-col"><h4>Информация</h4><a href="/blog/">Блог и статьи</a><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="/soglasie.html">Согласие на обработку ПДн</a><a href="/contacts.html">Контакты</a></div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.</div>
+      <div class="footer-bottom">© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Снятие ломки в Химках",
+    "description": "Снятие ломки на дому в Химках. Быстрое облегчение боли, тошноты, тремора. Анонимно. Выезд 25-35 мин.",
+    "url": "https://tyspas.ru/khimki/snyatie-lomki.html",
+    "mainEntity": {
+      "@type": "MedicalProcedure",
+      "name": "Купирование абстинентного синдрома",
+      "procedureType": "Withdrawal Management",
+      "location": {
+        "@type": "City",
+        "name": "Химки",
+        "containedInPlace": {"@type": "State", "name": "Московская область"}
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tyspas.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Химки", "item": "https://tyspas.ru/khimki.html"},
+        {"@type": "ListItem", "position": 3, "name": "Снятие ломки"}
+      ]
+    },
+    "about": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Как быстро наступает облегчение?", "acceptedAnswer": {"@type": "Answer", "text": "После введения препаратов первые улучшения наступают через 15-20 минут."}},
+        {"@type": "Question", "name": "Будет ли больно от укола?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Мы используем тонкие иглы и современные техники введения."}},
+        {"@type": "Question", "name": "Можно ли снять ломку анонимно?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Мы гарантируем полную конфиденциальность."}}
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn'); const navMenu = document.getElementById('navMenu');
+    menuBtn.addEventListener('click', () => { navMenu.classList.toggle('active'); menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰'; document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : ''; });
+    function toggleFaq(el) { const a = el.nextElementSibling; const i = el.querySelector('.faq-icon'); a.classList.toggle('open'); i.classList.toggle('open'); }
+    setTimeout(() => { const badge = document.getElementById('urgBadge'); if(badge) badge.classList.add('active'); }, 3000);
+  </script>
+</body>
+</html>

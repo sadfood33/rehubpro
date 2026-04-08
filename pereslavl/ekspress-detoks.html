@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Экспресс-детокс в Переславле-Залесском — Быстрое снятие похмелья на дому 24/7 | ТыСпас</title>
+  <meta name="description" content="Экспресс-детокс в Переславле-Залесском: быстрое снятие симптомов похмелья за 1-2 часа. Анонимно. Выезд в любой район за 40-60 минут. Врачи со стажем 10+ лет. Звоните +7 (499) 648-56-58.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/pereslavl/ekspress-detoks.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Экспресс-детокс в Переславле-Залесском — Быстрое снятие похмелья 24/7">
+  <meta property="og:description" content="Быстрое снятие похмелья в Переславле за 1-2 часа. Анонимно. Выезд в любой район. 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/pereslavl/ekspress-detoks.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .section-title { font-size:2rem; font-weight:800; text-align:center; margin-bottom:0.8rem; color:var(--primary-dark); }
+    .section-subtitle { text-align:center; color:var(--text-light); margin-bottom:2.5rem; max-width:750px; margin-inline:auto; }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* HERO */
+    .hero { background:linear-gradient(rgba(30,58,138,0.88), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80') center/cover; color:#fff; padding:80px 0; text-align:center; }
+    .hero h1 { font-size:2.8rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .hero p { font-size:18px; max-width:800px; margin:0 auto; opacity:0.95; }
+
+    /* CONTENT */
+    .content-section { background:#fff; padding:80px 0; }
+    .content-wrapper { max-width:900px; margin:0 auto; }
+    .content-wrapper h2 { font-size:1.8rem; font-weight:800; color:var(--primary-dark); margin:40px 0 20px; }
+    .content-wrapper h3 { font-size:1.4rem; font-weight:700; color:var(--text); margin:30px 0 15px; }
+    .content-wrapper h4 { font-size:1.2rem; font-weight:700; color:var(--text); margin:20px 0 10px; }
+    .content-wrapper p { margin-bottom:16px; color:var(--text-light); }
+    .content-wrapper ul, .content-wrapper ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .content-wrapper li { margin-bottom:8px; }
+    .warning-box { background:#fef2f2; border-left:4px solid #ef4444; padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .info-box { background:#eff6ff; border-left:4px solid var(--primary); padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .highlight-text { font-weight:600; color:var(--text); }
+
+    /* PRICING TABLE */
+    .pricing-table { width:100%; border-collapse:collapse; margin:24px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:var(--shadow); }
+    .pricing-table th, .pricing-table td { padding:16px; text-align:left; border-bottom:1px solid #e5e7eb; }
+    .pricing-table th { background:var(--primary); color:#fff; font-weight:700; }
+    .pricing-table tr:hover { background:#f8fafc; }
+    .price-val { font-weight:800; color:var(--primary); }
+
+    /* FAQ */
+    .faq-item { background:#fff; border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid #e5e7eb; }
+    .faq-q { padding:16px 18px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:0.2s; user-select:none; }
+    .faq-q:hover { color:var(--primary); background:#fafbfc; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease-out, padding 0.35s; padding:0 18px; font-size:14px; color:var(--text-light); line-height:1.6; }
+    .faq-a.open { max-height:400px; padding-bottom:16px; }
+    .faq-icon { transition:0.3s; font-size:16px; color:var(--text-light); }
+    .faq-icon.open { transform:rotate(180deg); color:var(--primary); }
+
+    /* CTA & FOOTER */
+    .cta-section { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 90px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+    .sticky-tooltip { background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px; font-size:11px; font-weight:600; white-space:nowrap; opacity:0; transform:translateY(4px); transition:0.3s; pointer-events:none; }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn { width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite; transition:0.3s; }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring { 0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); } 70% { box-shadow:0 0 0 14px rgba(245,158,11,0); } 100% { box-shadow:0 0 0 0 rgba(245,158,11,0); } }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .hero h1 { font-size:2rem; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-76-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="/blog/">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="/">Главная</a> <span>/</span> <a href="/pereslavl.html">Переславль-Залесский</a> <span>/</span> <span>Экспресс-детокс</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Экспресс-детокс в Переславле-Залесском — быстрое снятие похмелья и подготовка к важным делам в любом районе</h1>
+        <p>Экспресс-детокс в Переславле-Залесском: быстрое снятие симптомов похмелья за 1-2 часа. Анонимно. Выезд в центр, туристическую зону, микрорайоны, частный сектор за 40-60 минут. Врачи со стажем 10+ лет. Звоните: +7 (499) 648-56-58.</p>
+        <div style="margin-top:30px;">
+          <a href="tel:+74996485658" class="btn btn-primary" style="font-size:18px; padding:18px 36px;">📞 Вызвать врача для экспресс-детокса в Переславле</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-section" id="details">
+      <div class="container">
+        <div class="content-wrapper">
+          
+          <h2>Почему экспресс-детокс в Переславле-Залесском имеет свои особенности</h2>
+          <p>Переславль-Залесский — древний город в Ярославской области, входящий в знаменитое «Золотое кольцо России». Это создает уникальные потребности в быстрой помощи:</p>
+          <ul>
+            <li><strong>Туристический центр:</strong> Город привлекает тысячи туристов, паломников, гостей из Москвы и других регионов. Местные жители, работающие в сфере обслуживания, часто нуждаются в быстром восстановлении после «вечера с туристами» или «после сезона».</li>
+            <li><strong>Сезонность работы:</strong> Пиковая нагрузка в туристический сезон (лето, праздники) сменяется «мертвым сезоном», что создает стресс и нестабильный доход, провоцирующий употребление.</li>
+            <li><strong>Малый город:</strong> Население около 40 тысяч человек, где «все друг друга знают». Это повышает важность конфиденциальности лечения — наши услуги полностью анонимны.</li>
+            <li><strong>Удаленность от специализированных клиник:</strong> Ближайшие наркологические центры — в Ярославле (70 км) или Москве (140 км), что делает выездную помощь особенно востребованной.</li>
+          </ul>
+          <p>Эти факторы делают экспресс-детокс в Переславле особенно востребованным: это не лечение зависимости, а быстрая медицинская помощь для возвращения к нормальной жизни с учетом местных условий.</p>
+          
+          <div class="info-box">
+            <strong>✅ Местная специфика:</strong> Наши врачи знают логистику Переславля: дороги к Плещееву озеру, подъезды к монастырям, сезонные ограничения на грунтовых дорогах. Это позволяет провести экспресс-детокс на дому в любом районе за 1-2 часа.
+          </div>
+
+          <h2>Чем экспресс-детокс отличается от других услуг в Переславле</h2>
+          <p>Чтобы вы могли выбрать подходящую помощь, сравним ключевые услуги с учетом местных условий:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Услуга</th><th>Цель</th><th>Длительность</th><th>Когда нужна в Переславле</th></tr>
+            <tr><td><strong>Экспресс-детокс</strong></td><td>Быстрое снятие симптомов похмелья: головная боль, тошнота, слабость</td><td>1-2 часа</td><td>После эпизодического употребления, перед важными делами, для туристов</td></tr>
+            <tr><td><strong>Вывод из запоя</strong></td><td>Стабилизация состояния при абстиненции</td><td>2-4 часа</td><td>При запое от 2 дней, тяжелой интоксикации у работников с сезонным графиком</td></tr>
+            <tr><td><strong>Детоксикация</strong></td><td>Глубокое очищение и восстановление органов</td><td>2-3 часа × 2-3 сеанса</td><td>После длительной интоксикации, для подготовки к кодированию</td></tr>
+            <tr><td><strong>Экстренная помощь</strong></td><td>Спасение жизни при передозировке</td><td>1.5-3 часа</td><td>При угрозе жизни, остановке дыхания/сердца</td></tr>
+          </table>
+          <p>Врач на месте определит, какая помощь вам нужна. Экспресс-детокс — это решение для тех, кто хочет быстро вернуться к нормальной жизни после эпизодического употребления с учетом переславских факторов.</p>
+
+          <h2>Протокол экспресс-детокса в Переславле-Залесском: как работает врач</h2>
+          <p>Наш подход основан на принципах доказательной медицины и адаптирован под местные условия:</p>
+          
+          <ol>
+            <li><strong>Быстрая оценка состояния с учетом местных факторов:</strong> Врач опрашивает пациента, измеряет давление, пульс, оценивает уровень симптомов. Особое внимание уделяется факторам: работа в туристической сфере (требуется быстрое восстановление), туристическая нагрузка (требуется поддержка ЦНС после длительных поездок).</li>
+            <li><strong>Подбор препаратов с учетом местных рисков:</strong> На основе симптомов и местных факторов формируется индивидуальная схема. Учитываются:
+              <ul style="margin-top:8px; margin-left:16px;">
+                <li>Работа в туристической сфере, гостиничном бизнесе (требуется быстрое восстановление)</li>
+                <li>Туристическая или паломническая нагрузка (требуется поддержка ЦНС после длительных поездок)</li>
+                <li>Проживание в экологически чистых, но удаленных районах (требуется антиоксидантная поддержка)</li>
+                <li>Возраст, вес, количество употребленного алкоголя, хронические заболевания</li>
+              </ul>
+            </li>
+            <li><strong>Введение лекарств:</strong> Препараты вводятся внутривенно для максимального эффекта. Эффект наступает через 15-30 минут. Врач контролирует динамику с учетом стресса от сезонной работы и интеллектуального переутомления.</li>
+            <li><strong>Мониторинг:</strong> Врач остается с пациентом 30-60 минут после введения препаратов для контроля динамики.</li>
+            <li><strong>Рекомендации с учетом переславской специфики:</strong> Выдаются назначения на ближайшие часы (питьевой режим, легкий перекус), даются советы по минимизации воздействия стресса от сезонной работы и интеллектуального переутомления.</li>
+          </ol>
+
+          <h2>Какие препараты используются для экспресс-детокса в Переславле-Залесском</h2>
+          <p>Мы применяем только сертифицированные лекарства с доказанной эффективностью, адаптированные под местные условия:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Группа препаратов</th><th>Примеры</th><th>Эффект</th><th>Когда применяется в Переславле</th></tr>
+            <tr><td><strong>Кристаллоидные растворы</strong></td><td>Физраствор, Рингер</td><td>Восстанавливают объем крови, выводят водорастворимые токсины</td><td>Базовый этап любой детоксикации, особенно важен при обезвоживании после работы в туристический сезон</td></tr>
+            <tr><td><strong>Витамины группы B и C</strong></td><td>Тиамин, пиридоксин, аскорбиновая кислота</td><td>Восстанавливают нервную систему, истощенную интеллектуальным переутомлением</td><td>При головной боли, слабости, особенно у работников туристической сферы с сезонным графиком</td></tr>
+            <tr><td><strong>Гепатопротекторы</strong></td><td>Адеметионин, Эссенциале</td><td>Поддерживают функцию печени, ускоряют метаболизм этанола</td><td>При тошноте, тяжести в правом подреберье, особенно после работы в туристический сезон</td></tr>
+            <tr><td><strong>Симптоматические средства</strong></td><td>Обезболивающие, противорвотные</td><td>Снимают головную боль, тошноту, тремор</td><td>При выраженных симптомах похмелья, особенно у туристов перед вылетом</td></tr>
+            <tr><td><strong>Метаболические корректоры</strong></td><td>Янтарная кислота, Мексидол</td><td>Улучшают клеточное дыхание, ускоряют восстановление</td><td>Для ускорения общего восстановления после эпизодического употребления</td></tr>
+          </table>
+          <p><span class="highlight-text">Важно:</span> Все препараты вводятся после проверки на отсутствие аллергических реакций. Врач имеет полный набор для оказания неотложной помощи на случай непредвиденных реакций.</p>
+
+          <h2>Стоимость экспресс-детокса в Переславле-Залесском</h2>
+          <p>Цены фиксированы и не зависят от района. Никаких скрытых доплат за «сезон» или «удаленность». При выезде из Ярославля или Москвы — фиксированная доплата за логистику.</p>
+          <table class="pricing-table">
+            <tr><th>Тариф</th><th>Что входит</th><th>Время</th><th>Стоимость</th></tr>
+            <tr><td><strong>Базовый экспресс</strong></td><td>1 флакон: кристаллоиды + витамины, наблюдение</td><td>~1 час</td><td>от 3 000 ₽</td></tr>
+            <tr><td><strong>Расширенный экспресс</strong></td><td>2 флакона: кристаллоиды + витамины + гепатопротектор, контроль витальных функций</td><td>~1.5 часа</td><td>от 4 500 ₽</td></tr>
+            <tr><td><strong>Премиум экспресс</strong></td><td>3 флакона: полный протокол + симптоматические средства + рекомендации с учетом местных факторов</td><td>~2 часа</td><td>от 6 000 ₽</td></tr>
+            <tr><td><strong>Логистика из Ярославля/Москвы</strong></td><td>Фиксированная доплата за выезд в Переславль</td><td>—</td><td>+1 500 ₽</td></tr>
+          </table>
+          <p><span class="highlight-text">Выезд врача включен в стоимость по всему Переславлю.</span> Работаем также в ближайших населенных пунктах: Ярославль, Ростов, Александров, Киржач.</p>
+
+          <h2>Что можно сделать до приезда врача в Переславле</h2>
+          <p>Пока бригада едет, можно облегчить состояние пациента безопасными методами с учетом местных условий:</p>
+          <ul>
+            <li><strong>Пейте воду:</strong> Небольшими порциями (по 50-100 мл каждые 15 минут), чтобы не перегрузить желудок. Особенно важно после длительных поездок из Москвы или Ярославля.</li>
+            <li><strong>Легкая пища:</strong> Если есть аппетит, можно съесть бульон, сухари, банан — это поддержит уровень глюкозы, истощенный стрессом.</li>
+            <li><strong>Покой:</strong> Прилягте в тихом, проветренном месте. В центре города закройте окна от уличного шума.</li>
+            <li><strong>Не принимайте лекарства самостоятельно:</strong> Особенно обезболивающие, седативные без назначения врача — это может исказить картину и помешать подбору терапии.</li>
+          </ul>
+          <div class="warning-box">
+            <strong>⛔ НЕ РЕКОМЕНДУЕТСЯ:</strong>
+            <ul style="margin-top:8px; margin-left:16px;">
+              <li>Пить кофе, энергетики, алкоголь — это усилит нагрузку на печень и сердце, особенно после работы в туристический сезон.</li>
+              <li>Принимать горячую ванну или сауну — это может спровоцировать коллапс при нестабильном давлении.</li>
+              <li>Пытаться «вылечиться» новой дозой алкоголя — это лишь усугубит интоксикацию.</li>
+            </ul>
+          </div>
+
+          <h2>Когда экспресс-детокс не подходит в Переславле</h2>
+          <p>Экспресс-детокс — это помощь при эпизодическом употреблении. Он не подходит в следующих случаях:</p>
+          <ul>
+            <li><strong>Запой от 2 дней:</strong> Требуется вывод из запоя с более длительным наблюдением.</li>
+            <li><strong>Тяжелая интоксикация:</strong> При потере сознания, судорогах, нарушении дыхания требуется экстренная помощь, а не экспресс-детокс.</li>
+            <li><strong>Хронические заболевания в стадии обострения:</strong> При тяжелых заболеваниях печени, почек, сердца требуется стационарное наблюдение.</li>
+            <li><strong>Подозрение на отравление суррогатами:</strong> При подозрении на отравление метиловым спиртом или другими суррогатами требуется специфическая терапия.</li>
+          </ul>
+          <p>Врач на месте оценит состояние и порекомендует оптимальный формат помощи с учетом переславских факторов риска.</p>
+
+          <h2>Часто задаваемые вопросы по экспресс-детоксу в Переславле-Залесском</h2>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как быстро наступает облегчение после экспресс-детокса в Переславле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Первые улучшения (снижение головной боли, тошноты) обычно наступают через 15-30 минут после введения. Полное облегчение и возможность вернуться к делам — через 40-60 минут. Эффект может длиться 4-8 часов в зависимости от препарата и местных факторов (стресс от сезонной работы, интеллектуальное переутомление).</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли садиться за руль после экспресс-детокса в Переславле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Рекомендуем подождать 2-3 часа после завершения процедуры. Хотя препараты не влияют на реакцию напрямую, организм нуждается в времени для адаптации после процедуры, особенно после длительных поездок из Москвы или Ярославля.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Анонимно ли это для работников туристической сферы?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Абсолютно. Мы не передаем данные в государственные органы или работодателю. Машина приезжает без опознавательных знаков, врач представляется «терапевтом». В малом городе это критически важно.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы с туристами и паломниками?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем с жителями и гостями Переславля. Экспресс-детокс возможен для туристов, паломников и командировочных с учетом их графика. Анонимность гарантируется, документы могут оформляться под псевдонимом.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если сезонные ограничения на грунтовых дорогах?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врачи используют альтернативные маршруты: объездные пути, основные дороги. Диспетчер отслеживает статус дорог в реальном времени и корректирует маршрут. При необходимости направляется врач из ближайшего дежурного поста.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как быстро приедет врач в центр Переславля?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Среднее время прибытия в центр Переславля — 35-50 минут. Врачи знают короткие пути через исторические улицы и объездные маршруты, что позволяет избежать задержек в сезон туристического трафика.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли вызвать врача ночью в Переславле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем круглосуточно 24/7. Ночные вызовы не тарифицируются дополнительно — цена фиксирована.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если пациент работает в туристической сфере?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врач обязательно учитывает сезонность работы при подборе терапии. В арсенале есть препараты для быстрого восстановления после напряженного туристического сезона.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL CITIES BLOCK -->
+    <section class="cities-module" style="background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:60px 0; text-align:center;">
+      <div class="container">
+        <h2 class="section-title">Также выезжаем в соседние города</h2>
+        <p class="section-subtitle">Работаем без выходных. Подбираем ближайшую бригаду для минимального времени ожидания.</p>
+        <div class="cities-badges">
+          <a href="/pereslavl.html" class="city-badge active">Переславль (вы)</a>
+          <a href="/yaroslavl.html" class="city-badge">Ярославль</a>
+          <a href="/rostov.html" class="city-badge">Ростов</a>
+          <a href="/alexandrov.html" class="city-badge">Александров</a>
+          <a href="/kirzhach.html" class="city-badge">Киржач</a>
+          <a href="/sergiev-posad.html" class="city-badge">Сергиев Посад</a>
+          <span class="city-more">+ ещё 50 городов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="margin-bottom:12px;">Вернитесь в форму быстро и анонимно в Переславле</h2>
+        <p style="max-width:650px; margin:0 auto 20px; opacity:0.95;">Не откладывайте важные дела из-за похмелья. Звоните — врач приедет и поможет быстро восстановиться с учетом местных факторов.</p>
+        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;" class="cta-buttons">
+          <a href="tel:+74996485658" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px;">📞 +7 (499) 648-56-58</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px; opacity:0.9;">⏱️ Среднее время ответа: 10 секунд | 🚗 Выезд по Переславлю: 40-60 минут</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:+74996485658" class="sticky-btn" aria-label="Позвонить">📞</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Контакты</h4><a href="tel:+74996485658">+7 (499) 648-56-58</a><a href="mailto:info@tyspas.ru">info@tyspas.ru</a><p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p></div>
+        <div class="footer-col"><h4>Информация</h4><a href="/blog/">Блог и статьи</a><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="/soglasie.html">Согласие на обработку ПДн</a><a href="/contacts.html">Контакты</a></div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.</div>
+      <div class="footer-bottom">© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-76-01-000000.</div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Экспресс-детокс в Переславле-Залесском — Быстрое снятие похмелья 24/7",
+    "description": "Экспресс-детокс в Переславле-Залесском: быстрое снятие симптомов похмелья за 1-2 часа. Анонимно. Выезд в любой район.",
+    "url": "https://tyspas.ru/pereslavl/ekspress-detoks.html",
+    "mainEntity": {
+      "@type": "MedicalProcedure",
+      "name": "Экспресс-детоксикация при похмелье в Переславле-Залесском",
+      "procedureType": "Express Detoxification",
+      "location": {
+        "@type": "City",
+        "name": "Переславль-Залесский",
+        "containedInPlace": {"@type": "State", "name": "Ярославская область"}
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tyspas.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Переславль-Залесский", "item": "https://tyspas.ru/pereslavl.html"},
+        {"@type": "ListItem", "position": 3, "name": "Экспресс-детокс"}
+      ]
+    },
+    "about": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Как быстро наступает облегчение после экспресс-детокса в Переславле?", "acceptedAnswer": {"@type": "Answer", "text": "Первые улучшения через 15-30 минут. Полное облегчение через 40-60 минут."}},
+        {"@type": "Question", "name": "Можно ли садиться за руль после экспресс-детокса в Переславле?", "acceptedAnswer": {"@type": "Answer", "text": "Рекомендуем подождать 2-3 часа после завершения процедуры."}},
+        {"@type": "Question", "name": "Анонимно ли это для работников туристической сферы?", "acceptedAnswer": {"@type": "Answer", "text": "Абсолютно. Мы не передаем данные в государственные органы или работодателю. Машина приезжает без опознавательных знаков."}},
+        {"@type": "Question", "name": "Работаете ли вы с туристами и паломниками?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем с жителями и гостями Переславля. Экспресс-детокс возможен для туристов, паломников и командировочных."}},
+        {"@type": "Question", "name": "Что если сезонные ограничения на грунтовых дорогах?", "acceptedAnswer": {"@type": "Answer", "text": "Врачи используют альтернативные маршруты. Диспетчер отслеживает статус дорог в реальном времени."}},
+        {"@type": "Question", "name": "Как быстро приедет врач в центр Переславля?", "acceptedAnswer": {"@type": "Answer", "text": "Среднее время прибытия в центр Переславля — 35-50 минут."}},
+        {"@type": "Question", "name": "Можно ли вызвать врача ночью в Переславле?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем круглосуточно 24/7. Ночные вызовы не тарифицируются дополнительно."}},
+        {"@type": "Question", "name": "Что если пациент работает в туристической сфере?", "acceptedAnswer": {"@type": "Answer", "text": "Врач учитывает сезонность работы при подборе терапии. В арсенале есть препараты для быстрого восстановления."}}
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); overlay.classList.toggle('active');
+      menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    overlay.addEventListener('click', () => { navMenu.classList.remove('active'); overlay.classList.remove('active'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; });
+
+    function toggleFaq(el) {
+      const a = el.nextElementSibling; const i = el.querySelector('.faq-icon');
+      a.classList.toggle('open'); i.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

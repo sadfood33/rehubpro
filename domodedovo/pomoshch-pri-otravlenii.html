@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Помощь при отравлении в Домодедово — Срочная детоксикация на дому 24/7 | ТыСпас</title>
+  <meta name="description" content="Экстренная помощь при отравлении в Домодедово. Антидоты, промывание желудка, реанимация на месте. Выезд в любой район за 20-40 минут. Анонимно. Звоните +7 (499) 648-56-58.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/domodedovo/pomoshch-pri-otravlenii.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Помощь при отравлении в Домодедово — Срочная детоксикация 24/7">
+  <meta property="og:description" content="Экстренная помощь при отравлении в Домодедово. Антидоты, промывание, реанимация. Анонимно. 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/domodedovo/pomoshch-pri-otravlenii.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .section-title { font-size:2rem; font-weight:800; text-align:center; margin-bottom:0.8rem; color:var(--primary-dark); }
+    .section-subtitle { text-align:center; color:var(--text-light); margin-bottom:2.5rem; max-width:750px; margin-inline:auto; }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* HERO */
+    .hero { background:linear-gradient(rgba(30,58,138,0.88), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80') center/cover; color:#fff; padding:80px 0; text-align:center; }
+    .hero h1 { font-size:2.8rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .hero p { font-size:18px; max-width:800px; margin:0 auto; opacity:0.95; }
+
+    /* CONTENT */
+    .content-section { background:#fff; padding:80px 0; }
+    .content-wrapper { max-width:900px; margin:0 auto; }
+    .content-wrapper h2 { font-size:1.8rem; font-weight:800; color:var(--primary-dark); margin:40px 0 20px; }
+    .content-wrapper h3 { font-size:1.4rem; font-weight:700; color:var(--text); margin:30px 0 15px; }
+    .content-wrapper h4 { font-size:1.2rem; font-weight:700; color:var(--text); margin:20px 0 10px; }
+    .content-wrapper p { margin-bottom:16px; color:var(--text-light); }
+    .content-wrapper ul, .content-wrapper ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .content-wrapper li { margin-bottom:8px; }
+    .warning-box { background:#fef2f2; border-left:4px solid #ef4444; padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .info-box { background:#eff6ff; border-left:4px solid var(--primary); padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .highlight-text { font-weight:600; color:var(--text); }
+
+    /* PRICING TABLE */
+    .pricing-table { width:100%; border-collapse:collapse; margin:24px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:var(--shadow); }
+    .pricing-table th, .pricing-table td { padding:16px; text-align:left; border-bottom:1px solid #e5e7eb; }
+    .pricing-table th { background:var(--primary); color:#fff; font-weight:700; }
+    .pricing-table tr:hover { background:#f8fafc; }
+    .price-val { font-weight:800; color:var(--primary); }
+
+    /* FAQ */
+    .faq-item { background:#fff; border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid #e5e7eb; }
+    .faq-q { padding:16px 18px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:0.2s; user-select:none; }
+    .faq-q:hover { color:var(--primary); background:#fafbfc; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease-out, padding 0.35s; padding:0 18px; font-size:14px; color:var(--text-light); line-height:1.6; }
+    .faq-a.open { max-height:400px; padding-bottom:16px; }
+    .faq-icon { transition:0.3s; font-size:16px; color:var(--text-light); }
+    .faq-icon.open { transform:rotate(180deg); color:var(--primary); }
+
+    /* CTA & FOOTER */
+    .cta-section { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 90px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+    .sticky-tooltip { background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px; font-size:11px; font-weight:600; white-space:nowrap; opacity:0; transform:translateY(4px); transition:0.3s; pointer-events:none; }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn { width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite; transition:0.3s; }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring { 0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); } 70% { box-shadow:0 0 0 14px rgba(245,158,11,0); } 100% { box-shadow:0 0 0 0 rgba(245,158,11,0); } }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .hero h1 { font-size:2rem; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-50-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="/blog/">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="/">Главная</a> <span>/</span> <a href="/domodedovo.html">Домодедово</a> <span>/</span> <span>Помощь при отравлении</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Помощь при отравлении в Домодедово — экстренная детоксикация и реанимация на дому в любом районе</h1>
+        <p>Экстренная помощь при отравлении алкоголем, суррогатами, лекарствами, пищевыми токсинами в Домодедово. Антидоты, промывание желудка, реанимация на месте. Выезд в центр, зону аэропорта, микрорайоны, частный сектор за 20-40 минут. Звоните: +7 (499) 648-56-58.</p>
+        <div style="margin-top:30px;">
+          <a href="tel:+74996485658" class="btn btn-primary" style="font-size:18px; padding:18px 36px;">🚑 Вызвать скорую помощь в Домодедово</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-section" id="details">
+      <div class="container">
+        <div class="content-wrapper">
+          
+          <h2>Почему помощь при отравлении в Домодедово требует особого подхода</h2>
+          <p>Домодедово — город в Московской области с населением около 120 тысяч человек, известный прежде всего благодаря международному аэропорту Домодедово, одному из крупнейших транспортных узлов России. Это создает специфические риски отравлений:</p>
+          <ul>
+            <li><strong>Аэропорт и сменная работа:</strong> Тысячи сотрудников авиакомпаний, служб безопасности, обслуживания работают в режиме 24/7 с ненормированным графиком, что создает хронический стресс и может провоцировать употребление некачественного алкоголя или суррогатов «после смены».</li>
+            <li><strong>Логистический хаб:</strong> Город привлекает работников складов, транспортных компаний, курьерских служб, которые часто испытывают физическое и эмоциональное переутомление.</li>
+            <li><strong>Туристический транзит:</strong> Огромный поток пассажиров, командировочных, туристов, которые могут употреблять некачественный алкоголь или пищу «в поездке».</li>
+            <li><strong>Транспортная логистика:</strong> Город расположен на Каширском шоссе. Пробки могут затруднять доступ к стационарным клиникам, делая выездную помощь особенно востребованной.</li>
+          </ul>
+          <p>Эти факторы делают экстренную помощь при отравлении в Домодедово особенно важной: наши врачи знают местные риски, имеют специфические антидоты и знают логистику города для быстрого прибытия даже при пробках на Каширском шоссе.</p>
+          
+          <div class="warning-box">
+            <strong>⚠️ СМЕРТЕЛЬНАЯ ОПАСНОСТЬ:</strong> При отравлении суррогатами алкоголя (метиловый спирт, этиленгликоль) или пищевыми токсинами счет идет на часы. Каждая минута промедления снижает шансы на выживание без неврологических последствий.
+          </div>
+
+          <h2>Отравление в Домодедово: как отличить от похмелья и когда нужна экстренная помощь</h2>
+          <p>Многие путают тяжелое похмелье (абстинентный синдром) и острое отравление. Это критически важно, так как тактика лечения различается радикально. Похмелье возникает при снижении уровня алкоголя в крови и требует детоксикации. Отравление — это интоксикация организма огромными дозами этанола или (что еще опаснее) суррогатов.</p>
+          <p><strong>Срочно звоните врачу в Домодедово, если наблюдаете следующие симптомы отравления:</strong></p>
+          <ul>
+            <li><strong>Потеря сознания:</strong> Человека невозможно разбудить, он не реагирует на боль или громкие звуки.</li>
+            <li><strong>Дыхание:</strong> Редкое (менее 8 вдохов в минуту), неритмичное или шумное дыхание. Появление синюшности губ (цианоз).</li>
+            <li><strong>Рвота:</strong> Неукротимая рвота, не приносящая облегчения, либо рвота «кофейной гущей» (с примесью крови).</li>
+            <li><strong>Судороги:</strong> Неконтролируемые подергивания мышц или эпилептические припадки.</li>
+            <li><strong>Зрение:</strong> Жалобы на «туман», «сетку» перед глазами или полную слепоту (признак отравления метиловым спиртом, особенно актуально для туристов, купивших некачественный алкоголь).</li>
+            <li><strong>Пищевое отравление:</strong> Острая диарея, рвота, высокая температура после употребления местной еды в туристических заведениях или на логистических предприятиях.</li>
+            <li><strong>Туристический фактор:</strong> Если пациент — турист или транзитный пассажир, употребивший некачественный алкоголь или пищу «в поездке».</li>
+          </ul>
+          
+          <div class="info-box">
+            <strong>✅ Местная специфика:</strong> Наши врачи знают логистику Домодедово: подъезды к аэропорту, пробки на Каширском шоссе, режимные объекты, сезонные ограничения на дорогах. Это позволяет приехать быстрее городской скорой, особенно в часы пик авиационной активности. Реанимобиль оснащен специфическими антидотами для туристических и промышленных интоксикаций.
+          </div>
+
+          <h2>Алгоритм экстренной помощи при отравлении в Домодедово</h2>
+          <p>Наши реанимационные бригады работают по международному протоколу ABCDE, адаптированному под местные условия Домодедово:</p>
+          
+          <ol>
+            <li><strong>A (Airway) — обеспечение проходимости дыхательных путей:</strong> Очистка ротоглотки от рвотных масс, введение воздуховода, при необходимости — интубация трахеи. Особенно важно в зоне аэропорта с ограниченным доступом.</li>
+            <li><strong>B (Breathing) — поддержка дыхания:</strong> При угнетении или остановке дыхания используется мешок Амбу с маской или портативный аппарат ИВЛ. Подается 100% кислород для борьбы с гипоксией, усугубляемой экологическими факторами промышленных районов Домодедово.</li>
+            <li><strong>C (Circulation) — поддержка кровообращения:</strong> Контроль пульса и давления. При остановке сердца — немедленное начало сердечно-легочной реанимации и дефибрилляция при фибрилляции желудочков.</li>
+            <li><strong>D (Disability) — неврологическая оценка:</strong> Проверка уровня сознания по шкале Глазго, реакции зрачков, исключение судорожной активности. Введение специфических антидотов при подтвержденной интоксикации, с учетом туристических и промышленных факторов.</li>
+            <li><strong>E (Exposure) — полный осмотр и защита:</strong> Осмотр пациента на предмет травм, инъекционных следов, сыпи. Поддержание температуры тела, предотвращение переохлаждения. Сбор информации о возможных туристических контактах или употреблении местной еды/химических веществ.</li>
+          </ol>
+
+          <h2>Специфические антидоты для Домодедово: что и когда применяется</h2>
+          <p>Эффективность реанимации при отравлении часто зависит от своевременного введения антидота. Наши врачи имеют в арсенале полный набор антидотов, включая специфические для туристических и промышленных интоксикаций:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Вещество</th><th>Антидот</th><th>Механизм действия</th><th>Когда применяется в Домодедово</th></tr>
+            <tr><td><strong>Опиоиды</strong><br><small>Героин, морфин, фентанил</small></td><td>Налоксон (Наркан)</td><td>Блокирует опиоидные рецепторы, вытесняя яд</td><td>При угнетении дыхания, точечных зрачках, коме</td></tr>
+            <tr><td><strong>Метиловый спирт</strong><br><small>Суррогаты, технические жидкости</small></td><td>Этанол (в/в) или фомепизол</td><td>Конкурирует с токсичными спиртами за фермент алкогольдегидрогеназу</td><td>При подозрении на отравление суррогатами, особенно у туристов, купивших некачественный алкоголь</td></tr>
+            <tr><td><strong>Этиленгликоль</strong><br><small>Антифриз, тормозная жидкость</small></td><td>Этанол или фомепизол</td><td>Блокирует образование токсичных метаболитов</td><td>При подозрении на отравление техническими жидкостями, актуально для работников промышленных предприятий</td></tr>
+            <tr><td><strong>Пищевые токсины</strong><br><small>Ботулотоксин, сальмонелла</small></td><td>Симптоматическая терапия, специфические антитоксины</td><td>Нейтрализация токсинов, поддержка жизненных функций</td><td>При подозрении на пищевое отравление после посещения туристических заведений или столовых на предприятиях</td></tr>
+            <tr><td><strong>Бензодиазепины</strong><br><small>Феназепам, диазепам</small></td><td>Флумазенил (Анексат)</td><td>Конкурентный антагонист бензодиазепиновых рецепторов</td><td>При глубокой седации, угнетении дыхания после приема транквилизаторов</td></tr>
+          </table>
+          <p><span class="highlight-text">Важно:</span> Антидоты вводятся только после оценки состояния и под контролем витальных функций. Неправильное применение может ухудшить состояние пациента.</p>
+
+          <h2>Стоимость экстренной помощи при отравлении в Домодедово</h2>
+          <p>При отравлении речь идет о спасении жизни, поэтому мы минимизируем бюрократию. Стоимость фиксируется «под ключ» и включает все необходимые манипуляции и препараты. Никаких скрытых доплат за «пробки на Каширском шоссе», «удаленность района» или «ночной вызов».</p>
+          <table class="pricing-table">
+            <tr><th>Вид помощи</th><th>Что входит</th><th>Время</th><th>Стоимость</th></tr>
+            <tr><td><strong>Экстренная детоксикация</strong></td><td>Капельница, антидоты (базовые), мониторинг</td><td>1.5-2 часа</td><td>от 5 000 ₽</td></tr>
+            <tr><td><strong>Тяжелое отравление</strong></td><td>Реанимация на месте, ИВЛ, специфические антидоты с учетом стресса от работы в аэропорту</td><td>2-3 часа</td><td>от 8 000 ₽</td></tr>
+            <tr><td><strong>Транспортировка в реанимацию</strong></td><td>Сопровождение до стационара, непрерывный мониторинг, поддержка в пути с учетом логистики Домодедово</td><td>Зависит от расстояния</td><td>от 7 000 ₽ + км</td></tr>
+            <tr><td><strong>Комплекс (Реанимация + Транспортировка)</strong></td><td>Полный цикл спасения и доставки в профильный стационар</td><td>3+ часа</td><td>от 12 000 ₽</td></tr>
+          </table>
+          <p><span class="highlight-text">Выезд включен в стоимость по всему Домодедово.</span> Работаем также в ближайших населенных пунктах: Москва, Видное, Подольск, Раменское.</p>
+
+          <h2>Первая помощь до приезда врача в Домодедово</h2>
+          <p>Пока реанимационная бригада едет, ваши действия могут спасти жизнь. Строго следуйте алгоритму с учетом местных условий:</p>
+          <ul>
+            <li><strong>Проверьте сознание и дыхание:</strong> Если человек без сознания и не дышит — немедленно начинайте сердечно-легочную реанимацию (непрямой массаж сердца + искусственное дыхание).</li>
+            <li><strong>Уложите в устойчивое боковое положение:</strong> Если дыхание есть, но человек без сознания — это предотвратит аспирацию рвотными массами. В зоне аэропорта обеспечьте доступ к пациенту для бригады.</li>
+            <li><strong>Освободите дыхательные пути:</strong> Расстегните тесную одежду, откройте окна. В частном секторе убедитесь, что проход к пациенту свободен для бригады.</li>
+            <li><strong>Соберите информацию:</strong> Найдите упаковки от лекарств, шприцы, бутылки, этикетки от продуктов питания или химических веществ — это поможет врачу определить вещество и подобрать антидот. Особенно важно для работников аэропорта и туристов.</li>
+            <li><strong>Подготовьте место:</strong> Освободите проход к пациенту, обеспечьте хорошее освещение. В зоне аэропорта согласуйте доступ с учетом режима безопасности.</li>
+          </ul>
+          <div class="warning-box">
+            <strong>⛔ КАТЕГОРИЧЕСКИ НЕЛЬЗЯ:</strong>
+            <ul style="margin-top:8px; margin-left:16px;">
+              <li>Пытаться напоить водой или вызвать рвоту у человека без сознания — риск захлебнуться.</li>
+              <li>Давать любые лекарства без назначения врача — это может усугубить состояние, особенно при случаях, связанных с работой в аэропорту.</li>
+              <li>Оставлять пациента одного — состояние может ухудшиться за секунды, особенно у туристов без местной поддержки.</li>
+              <li>Пытаться «вылечиться» новой дозой алкоголя — это лишь усугубит интоксикацию.</li>
+            </ul>
+          </div>
+
+          <h2>Часто задаваемые вопросы по помощи при отравлении в Домодедово</h2>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что делать, если человек отравился некачественным алкоголем в Домодедово?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Это смертельно опасно! Немедленно звоните в скорую. До приезда врачей следите, чтобы он не задохнулся от рвоты. Наши врачи имеют специфические антидоты (этанол, фомепизол) для таких случаев, особенно актуально для туристов.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли вызвать бригаду анонимно в зоне аэропорта?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Абсолютно. Мы не передаем данные в государственные органы или работодателю. Машина приезжает без опознавательных знаков, логотипов или надписей. Врач представляется «терапевтом» или «родственником». Коллеги ничего не узнают — критически важно для работников аэропорта.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если пробки на Каширском шоссе?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врачи используют альтернативные маршруты: объездные пути, лесные дороги. Диспетчер отслеживает статус дорог в реальном времени и корректирует маршрут. При необходимости направляется бригада из ближайшего дежурного поста.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы в зоне аэропорта?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем во всех типах застройки, включая зону аэропорта. Врачи имеют навигацию с точными координатами терминалов и знают особенности пропусков. При вызове уточните адрес с ориентирами для быстрого нахождения.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если пациент работает на вредном производстве?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врач обязательно учитывает условия работы при подборе терапии. В реанимобиле есть специфические антидоты и оборудование для промышленных интоксикаций. При необходимости координируем действия с местными медицинскими службами.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как быстро приедет бригада в центр Домодедово?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Среднее время прибытия в центр Домодедово — 20-30 минут. Врачи знают короткие пути через исторические улицы и объездные маршруты, что позволяет избежать задержек на Каширском шоссе.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы с транзитными пассажирами?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем с жителями и гостями Домодедово. Экстренная помощь возможна для транзитных пассажиров и командировочных с учетом их графика. Анонимность гарантируется, документы могут оформляться под псевдонимом.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как организованы выезды при пробках на Каширском шоссе?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Диспетчер отслеживает статус дорог в реальном времени. При пробках используются альтернативные маршруты или объездные пути. Время прибытия корректируется с учетом дорожной ситуации.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL CITIES BLOCK -->
+    <section class="cities-module" style="background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:60px 0; text-align:center;">
+      <div class="container">
+        <h2 class="section-title">Также выезжаем в соседние города</h2>
+        <p class="section-subtitle">Работаем без выходных. Подбираем ближайшую бригаду для минимального времени ожидания.</p>
+        <div class="cities-badges">
+          <a href="/domodedovo.html" class="city-badge active">Домодедово (вы)</a>
+          <a href="/moscow.html" class="city-badge">Москва</a>
+          <a href="/vidnoe.html" class="city-badge">Видное</a>
+          <a href="/podolsk.html" class="city-badge">Подольск</a>
+          <a href="/ramenskoe.html" class="city-badge">Раменское</a>
+          <a href="/balashikha.html" class="city-badge">Балашиха</a>
+          <span class="city-more">+ ещё 50 городов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="margin-bottom:12px;">⚠️ Счет идет на минуты в Домодедово!</h2>
+        <p style="max-width:650px; margin:0 auto 20px; opacity:0.95;">При отравлении каждая секунда на счету. Не ждите, не надейтесь на «авось». Звоните сейчас — реанимация уже в пути по Домодедово с учетом пробок на Каширском шоссе, логистики и авиационной активности.</p>
+        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;" class="cta-buttons">
+          <a href="tel:+74996485658" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px;">🚑 +7 (499) 648-56-58</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px; opacity:0.9;">⏱️ Среднее время ответа: 5 секунд | 🚑 Выезд по Домодедово: 20-40 минут</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:+74996485658" class="sticky-btn" aria-label="Позвонить">🚑</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Контакты</h4><a href="tel:+74996485658">+7 (499) 648-56-58</a><a href="mailto:info@tyspas.ru">info@tyspas.ru</a><p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p></div>
+        <div class="footer-col"><h4>Информация</h4><a href="/blog/">Блог и статьи</a><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="/soglasie.html">Согласие на обработку ПДн</a><a href="/contacts.html">Контакты</a></div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.</div>
+      <div class="footer-bottom">© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Помощь при отравлении в Домодедово — Срочная детоксикация 24/7",
+    "description": "Экстренная помощь при отравлении в Домодедово. Антидоты, промывание, реанимация. Анонимно. 24/7.",
+    "url": "https://tyspas.ru/domodedovo/pomoshch-pri-otravlenii.html",
+    "mainEntity": {
+      "@type": "MedicalProcedure",
+      "name": "Экстренная детоксикация при отравлении в Домодедово",
+      "procedureType": "Emergency Toxicology",
+      "location": {
+        "@type": "City",
+        "name": "Домодедово",
+        "containedInPlace": {"@type": "State", "name": "Московская область"}
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tyspas.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Домодедово", "item": "https://tyspas.ru/domodedovo.html"},
+        {"@type": "ListItem", "position": 3, "name": "Помощь при отравлении"}
+      ]
+    },
+    "about": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Что делать, если человек отравился некачественным алкоголем в Домодедово?", "acceptedAnswer": {"@type": "Answer", "text": "Это смертельно опасно! Звоните в скорую. Наши врачи имеют специфические антидоты (этанол, фомепизол) для таких случаев."}},
+        {"@type": "Question", "name": "Можно ли вызвать бригаду анонимно в зоне аэропорта?", "acceptedAnswer": {"@type": "Answer", "text": "Абсолютно. Мы не передаем данные в государственные органы или работодателю. Машина приезжает без опознавательных знаков."}},
+        {"@type": "Question", "name": "Что если пробки на Каширском шоссе?", "acceptedAnswer": {"@type": "Answer", "text": "Врачи используют альтернативные маршруты. Диспетчер отслеживает статус дорог в реальном времени."}},
+        {"@type": "Question", "name": "Работаете ли вы в зоне аэропорта?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем во всех типах застройки. В зоне аэропорта врачи имеют навигацию с точными координатами."}},
+        {"@type": "Question", "name": "Что если пациент работает на вредном производстве?", "acceptedAnswer": {"@type": "Answer", "text": "Врач учитывает условия работы при подборе терапии. В реанимобиле есть специфические антидоты для промышленных интоксикаций."}},
+        {"@type": "Question", "name": "Как быстро приедет бригада в центр Домодедово?", "acceptedAnswer": {"@type": "Answer", "text": "Среднее время прибытия в центр Домодедово — 20-30 минут."}},
+        {"@type": "Question", "name": "Работаете ли вы с транзитными пассажирами?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем с жителями и гостями Домодедово. Экстренная помощь возможна для транзитных пассажиров."}},
+        {"@type": "Question", "name": "Как организованы выезды при пробках на Каширском шоссе?", "acceptedAnswer": {"@type": "Answer", "text": "Диспетчер отслеживает статус дорог в реальном времени. При пробках используются альтернативные маршруты."}}
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); overlay.classList.toggle('active');
+      menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    overlay.addEventListener('click', () => { navMenu.classList.remove('active'); overlay.classList.remove('active'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; });
+
+    function toggleFaq(el) {
+      const a = el.nextElementSibling; const i = el.querySelector('.faq-icon');
+      a.classList.toggle('open'); i.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
