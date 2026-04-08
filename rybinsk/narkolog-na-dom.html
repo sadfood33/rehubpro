@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выезд медицинской бригады в Рыбинске — Скорая помощь 24/7 | ТыСпас</title>
+  <meta name="description" content="Экстренный выезд медицинской бригады в Рыбинске: врач + медсестра + водитель. Реанимобиль, оборудование, препараты. Выезд в любой район за 20-40 минут. Анонимно. Звоните +7 (499) 648-56-58.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/rybinsk/vyezd-brigady.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Выезд медицинской бригады в Рыбинске — Скорая помощь 24/7">
+  <meta property="og:description" content="Экстренный выезд в Рыбинске: врач + медсестра + водитель. Реанимобиль, оборудование. Анонимно. 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/rybinsk/vyezd-brigady.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .section-title { font-size:2rem; font-weight:800; text-align:center; margin-bottom:0.8rem; color:var(--primary-dark); }
+    .section-subtitle { text-align:center; color:var(--text-light); margin-bottom:2.5rem; max-width:750px; margin-inline:auto; }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* HERO */
+    .hero { background:linear-gradient(rgba(30,58,138,0.88), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80') center/cover; color:#fff; padding:80px 0; text-align:center; }
+    .hero h1 { font-size:2.8rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .hero p { font-size:18px; max-width:800px; margin:0 auto; opacity:0.95; }
+
+    /* CONTENT */
+    .content-section { background:#fff; padding:80px 0; }
+    .content-wrapper { max-width:900px; margin:0 auto; }
+    .content-wrapper h2 { font-size:1.8rem; font-weight:800; color:var(--primary-dark); margin:40px 0 20px; }
+    .content-wrapper h3 { font-size:1.4rem; font-weight:700; color:var(--text); margin:30px 0 15px; }
+    .content-wrapper h4 { font-size:1.2rem; font-weight:700; color:var(--text); margin:20px 0 10px; }
+    .content-wrapper p { margin-bottom:16px; color:var(--text-light); }
+    .content-wrapper ul, .content-wrapper ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .content-wrapper li { margin-bottom:8px; }
+    .warning-box { background:#fef2f2; border-left:4px solid #ef4444; padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .info-box { background:#eff6ff; border-left:4px solid var(--primary); padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .highlight-text { font-weight:600; color:var(--text); }
+
+    /* PRICING TABLE */
+    .pricing-table { width:100%; border-collapse:collapse; margin:24px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:var(--shadow); }
+    .pricing-table th, .pricing-table td { padding:16px; text-align:left; border-bottom:1px solid #e5e7eb; }
+    .pricing-table th { background:var(--primary); color:#fff; font-weight:700; }
+    .pricing-table tr:hover { background:#f8fafc; }
+    .price-val { font-weight:800; color:var(--primary); }
+
+    /* FAQ */
+    .faq-item { background:#fff; border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid #e5e7eb; }
+    .faq-q { padding:16px 18px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:0.2s; user-select:none; }
+    .faq-q:hover { color:var(--primary); background:#fafbfc; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease-out, padding 0.35s; padding:0 18px; font-size:14px; color:var(--text-light); line-height:1.6; }
+    .faq-a.open { max-height:400px; padding-bottom:16px; }
+    .faq-icon { transition:0.3s; font-size:16px; color:var(--text-light); }
+    .faq-icon.open { transform:rotate(180deg); color:var(--primary); }
+
+    /* CTA & FOOTER */
+    .cta-section { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 90px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+    .sticky-tooltip { background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px; font-size:11px; font-weight:600; white-space:nowrap; opacity:0; transform:translateY(4px); transition:0.3s; pointer-events:none; }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn { width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite; transition:0.3s; }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring { 0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); } 70% { box-shadow:0 0 0 14px rgba(245,158,11,0); } 100% { box-shadow:0 0 0 0 rgba(245,158,11,0); } }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .hero h1 { font-size:2rem; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-50-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="/blog/">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="/">Главная</a> <span>/</span> <a href="/rybinsk.html">Рыбинск</a> <span>/</span> <span>Выезд бригады</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Выезд медицинской бригады в Рыбинске — экстренная помощь на дому с реанимационным оборудованием в любом районе</h1>
+        <p>Экстренный выезд полной бригады в Рыбинске: врач + медсестра + водитель. Реанимобиль, инфузоматы, дефибриллятор, кислород. Выезд в Центральный, Волжский, Переборский, Судоверфь, Северный районы за 20-40 минут. Звоните: +7 (499) 648-56-58.</p>
+        <div style="margin-top:30px;">
+          <a href="tel:+74996485658" class="btn btn-primary" style="font-size:18px; padding:18px 36px;">🚑 Вызвать бригаду в Рыбинске СРОЧНО</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-section" id="details">
+      <div class="container">
+        <div class="content-wrapper">
+          
+          <h2>Почему выезд бригады в Рыбинске требует особого подхода</h2>
+          <p>Рыбинск — второй по величине город Ярославской области с уникальной промышленной и речной инфраструктурой, что создает специфические логистические и медицинские вызовы для экстренной помощи:</p>
+          <ul>
+            <li><strong>Географические особенности:</strong> Город разделен реками Волгой и Шексной, имеет несколько мостов с сезонными ограничениями. Наши бригады знают альтернативные маршруты для быстрого прибытия даже при закрытии мостов или пробках на Крестовой.</li>
+            <li><strong>Промышленные факторы:</strong> Наличие крупных предприятий (ОДК-Сатурн, Рыбинский мотор, верфь) создает риск профессиональных интоксикаций и требует специфического оборудования в реанимобиле.</li>
+            <li><strong>Речной фактор:</strong> Расположение на слиянии Волги и Шексны привлекает туристов, рыбаков, речников, которые могут нуждаться в экстренной помощи без местных контактов или желания афишировать проблему.</li>
+            <li><strong>Сезонность:</strong> Летний навигационный сезон и зимние праздники создают пики обращений, требующие быстрого развертывания бригад и учета сезонных ограничений на дорогах.</li>
+          </ul>
+          <p>Эти факторы делают выезд специализированной бригады в Рыбинске особенно важным: наша команда знает город, его логистику и медицинские особенности, что позволяет приезжать быстрее и оказывать более точную помощь.</p>
+          
+          <div class="info-box">
+            <strong>✅ Местная специфика:</strong> Наши бригады дежурят в ключевых точках Рыбинска, что позволяет минимизировать время прибытия даже в часы пик на Крестовой или при сезонных ограничениях на мостах.
+          </div>
+
+          <h2>Состав выездной бригады в Рыбинске: кто приедет</h2>
+          <p>При экстренных состояниях один врач физически не может обеспечить полный объем помощи. Наша бригада — это автономный медицинский модуль, способный оказать помощь любой сложности на месте или обеспечить безопасную транспортировку:</p>
+          <ul>
+            <li><strong>Врач-нарколог / реаниматолог:</strong> Принимает решения, проводит диагностику, назначает терапию, руководит бригадой. Имеет опыт работы с промышленными интоксикациями и речными случаями.</li>
+            <li><strong>Процедурная медсестра:</strong> Ставит капельницы, делает инъекции, следит за состоянием пациента, ведет документацию. Знает специфику работы в историческом центре и частном секторе Рыбинска.</li>
+            <li><strong>Водитель-фельдшер:</strong> Знает город как свои пять пальцев: мосты через Волгу и Шексну, пробки на Крестовой, особенности заезда в частный сектор Судоверфи. Обеспечивает логистику, помогает в экстренных ситуациях, имеет медицинскую подготовку.</li>
+          </ul>
+          <p>Такая комплектация позволяет одновременно проводить несколько манипуляций: пока врач осматривает пациента, медсестра готовит препараты, а водитель обеспечивает связь с диспетчером и логистику с учетом сезонных ограничений.</p>
+
+          <h2>Оснащение реанимобиля для Рыбинска: что мы привозим</h2>
+          <p>Наш автомобиль — это не просто транспорт, а мобильный медицинский пост, адаптированный под местные условия. Мы привозим всё необходимое для оказания помощи любого уровня сложности:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Оборудование</th><th>Назначение</th><th>Когда применяется в Рыбинске</th></tr>
+            <tr><td><strong>Инфузионные насосы (инфузоматы)</strong></td><td>Точная подача препаратов с контролируемой скоростью</td><td>При длительной инфузионной терапии, седации, особенно для работников промышленных зон</td></tr>
+            <tr><td><strong>Дефибриллятор с монитором</strong></td><td>Восстановление сердечного ритма, мониторинг ЭКГ</td><td>При аритмиях, остановке сердца, особенно у работников сменного графика на ОДК-Сатурн</td></tr>
+            <tr><td><strong>Аппарат ИВЛ / мешок Амбу</strong></td><td>Поддержка или замена самостоятельного дыхания</td><td>При угнетении дыхания, остановке дыхания, при отравлениях на промышленных предприятиях</td></tr>
+            <tr><td><strong>Кислородный концентратор / баллон</strong></td><td>Подача кислорода для борьбы с гипоксией</td><td>При цианозе, одышке, сатурации <90%, особенно в промышленных районах</td></tr>
+            <tr><td><strong>Набор для интубации</strong></td><td>Обеспечение проходимости дыхательных путей</td><td>При потере сознания, риске аспирации, в историческом центре с ограниченным доступом</td></tr>
+            <tr><td><strong>Полный набор экстренных препаратов</strong></td><td>Адреналин, дексаметазон, антигистаминные, антидоты</td><td>При анафилаксии, отеке Квинке, передозировке, профессиональных интоксикациях</td></tr>
+            <tr><td><strong>Монитор жизненных функций</strong></td><td>Непрерывный контроль АД, пульса, сатурации, температуры</td><td>При нестабильном состоянии, для раннего выявления ухудшения у речников без местной поддержки</td></tr>
+          </table>
+          <p><span class="highlight-text">Важно:</span> Всё оборудование проходит регулярное ТО и поверку. Препараты закупаются у официальных дистрибьюторов с полным пакетом документов. Бригады знают логистику Рыбинска для минимизации времени реакции при экстренных ситуациях.</p>
+
+          <h2>Логистика и время прибытия по районам Рыбинска</h2>
+          <p>Скорость реагирования — критический фактор при экстренных вызовах. Наша сеть дежурных постов в Рыбинске позволяет минимизировать время ожидания:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Район</th><th>Среднее время прибытия</th><th>Особенности логистики</th></tr>
+            <tr><td><strong>Центральный, Волжский</strong></td><td>20-30 минут</td><td>Исторический центр, музей-заповедник, туристические зоны. Врачи знают парковки и подъезды в узких улицах Старого города, альтернативные маршруты при пробках на Крестовой.</td></tr>
+            <tr><td><strong>Переборский, Судоверфь</strong></td><td>25-35 минут</td><td>Промышленная зона, рабочие кварталы, частный сектор. Опыт работы с коллективными вызовами с предприятий, знание подъездов к ОДК-Сатурн.</td></tr>
+            <tr><td><strong>Северный, Западный</strong></td><td>30-40 минут</td><td>Спальные районы, частный сектор, мосты через Шексну. Навигация с учетом сезонных ограничений на мостах, знание объездных путей через Волгу.</td></tr>
+            <tr><td><strong>Новые микрорайоны, окраины</strong></td><td>25-35 минут</td><td>Новостройки, коттеджные поселки. Координация с УК для доступа в закрытые территории, знание коротких путей через лесные массивы.</td></tr>
+          </table>
+          <p>При вызове диспетчер точно называет интервал прибытия с учетом текущей дорожной ситуации и сезонных ограничений на мостах. Все автомобили оборудованы навигацией с онлайн-мониторингом пробок и погодных условий.</p>
+
+          <h2>Чем выезд бригады в Рыбинске отличается от городской скорой помощи</h2>
+          <p>Многие пациенты задаются вопросом: зачем вызывать частную бригаду, если можно позвонить 103? Вот ключевые различия с учетом местных условий:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Параметр</th><th>Частная бригада (ТыСпас) в Рыбинске</th><th>Городская скорая (103)</th></tr>
+            <tr><td><strong>Анонимность</strong></td><td>Полная. Данные не передаются в гос. органы. Машина без опознавательных знаков — важно для речников и жителей крупных ЖК.</td><td>Регистрация в системе, возможна передача данных в диспансеры.</td></tr>
+            <tr><td><strong>Специализация</strong></td><td>Наркология, токсикология, психиатрия с учетом промышленных факторов Рыбинска.</td><td>Общая медицина, экстренные состояния любой этиологии.</td></tr>
+            <tr><td><strong>Время ожидания</strong></td><td>20-40 минут (гарантировано с учетом пробок на Крестовой и мостов).</td><td>От 20 минут до нескольких часов (в зависимости от загруженности и сезонных ограничений).</td></tr>
+            <tr><td><strong>Оборудование</strong></td><td>Специализированное под наркологические случаи и промышленные интоксикации.</td><td>Универсальное, но может не включать специфические антидоты для промышленных вредностей.</td></tr>
+            <tr><td><strong>Госпитализация</strong></td><td>По желанию пациента в партнерские клиники с учетом логистики Рыбинска.</td><td>В государственные стационары по профилю, часто с длительной транспортировкой через мосты.</td></tr>
+            <tr><td><strong>Стоимость</strong></td><td>Платно, фиксированные тарифы без доплат за «пробки» или «удаленность».</td><td>Бесплатно по полису ОМС, но с возможными очередями и задержками.</td></tr>
+          </table>
+          <p><span class="highlight-text">Важно:</span> При угрозе жизни (остановка сердца, дыхания) мы рекомендуем вызывать и городскую скорую параллельно с нашей бригадой для обеспечения максимальной безопасности.</p>
+
+          <h2>Стоимость выезда бригады в Рыбинске</h2>
+          <p>Цены фиксированы и не зависят от района. Никаких скрытых доплат за «пробки на Крестовой», «сезонные ограничения на мостах», «ночной вызов» или «сложность заезда в частный сектор».</p>
+          <table class="pricing-table">
+            <tr><th>Тариф</th><th>Состав</th><th>Радиус</th><th>Стоимость</th></tr>
+            <tr><td><strong>Стандарт</strong></td><td>Врач + медсестра, базовое оборудование</td><td>В пределах Рыбинска</td><td>от 4 000 ₽</td></tr>
+            <tr><td><strong>Расширенный</strong></td><td>Врач-реаниматолог + медсестра, полный набор оборудования с учетом промышленных факторов</td><td>Рыбинск + пригороды</td><td>от 6 500 ₽</td></tr>
+            <tr><td><strong>Реанимация</strong></td><td>Реаниматолог + медсестра + водитель, реанимобиль с усиленным набором для промышленных интоксикаций</td><td>Ярославская область</td><td>от 9 000 ₽</td></tr>
+            <tr><td><strong>Транспортировка</strong></td><td>Сопровождение пациента в клинику на реанимобиле с учетом логистики Рыбинска и мостов</td><td>В пределах региона</td><td>от 7 000 ₽ + км</td></tr>
+          </table>
+          <p><span class="highlight-text">Выезд включен в стоимость по всему Рыбинску.</span> Работаем также в ближайших населенных пунктах: Тутаев, Углич, Пошехонье, Мышкин. При заказе от 2 услуг или для постоянных пациентов предусмотрены скидки.</p>
+
+          <h2>Что делать до приезда бригады в Рыбинске</h2>
+          <p>Пока бригада едет, ваши действия могут спасти жизнь. Строго следуйте алгоритму с учетом местных условий:</p>
+          <ul>
+            <li><strong>Проверьте сознание и дыхание:</strong> Если человек без сознания и не дышит — немедленно начинайте сердечно-легочную реанимацию (непрямой массаж сердца + искусственное дыхание).</li>
+            <li><strong>Уложите в устойчивое боковое положение:</strong> Если дыхание есть, но человек без сознания — это предотвратит аспирацию рвотными массами. В историческом центре обеспечьте доступ к пациенту для бригады.</li>
+            <li><strong>Освободите дыхательные пути:</strong> Расстегните тесную одежду, откройте окна. В частном секторе Судоверфи убедитесь, что проход к пациенту свободен для бригады.</li>
+            <li><strong>Соберите информацию:</strong> Найдите упаковки от лекарств, шприцы, бутылки, этикетки от технических жидкостей — это поможет врачу определить вещество и подобрать антидот. Особенно важно для работников промышленных предприятий и речников.</li>
+            <li><strong>Подготовьте место:</strong> Освободите проход к пациенту, обеспечьте хорошее освещение. В историческом центре согласуйте доступ с УК или консьержем.</li>
+          </ul>
+          <div class="warning-box">
+            <strong>⛔ КАТЕГОРИЧЕСКИ НЕЛЬЗЯ:</strong>
+            <ul style="margin-top:8px; margin-left:16px;">
+              <li>Пытаться напоить водой или вызвать рвоту у человека без сознания — риск захлебнуться.</li>
+              <li>Давать любые лекарства без назначения врача — это может усугубить состояние, особенно при промышленных интоксикациях.</li>
+              <li>Оставлять пациента одного — состояние может ухудшиться за секунды, особенно у речников без местной поддержки.</li>
+              <li>Пытаться «вылечиться» новой дозой алкоголя — это лишь усугубит интоксикацию.</li>
+            </ul>
+          </div>
+
+          <h2>Часто задаваемые вопросы по выезду бригады в Рыбинске</h2>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как быстро приедет бригада в Центральный район?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Среднее время прибытия в центр Рыбинска — 20-30 минут. Врачи знают короткие пути через исторические улицы и объездные маршруты, что позволяет избежать пробок на Крестовой.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли вызвать бригаду анонимно в центре Рыбинска?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Абсолютно. Мы не передаем данные в государственные органы. Машина приезжает без опознавательных знаков, логотипов или надписей. Врач представляется «терапевтом» или «родственником». Соседи и туристы ничего не узнают.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если пробки на Крестовой?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врачи используют альтернативные маршруты: улицы через Шексну, объездные пути, лесные дороги. Диспетчер отслеживает пробки в реальном времени и корректирует маршрут. При необходимости направляется бригада из ближайшего дежурного поста.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы в частном секторе Судоверфи?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем во всех типах застройки. В частном секторе врачи имеют навигацию с точными координатами и знают особенности подъездов. При вызове уточните адрес с ориентирами для быстрого нахождения.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли отказаться от госпитализации после приезда бригады в Рыбинске?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да. Если состояние стабилизировалось и врач не видит угрозы жизни, вы можете отказаться от госпитализации. Врач выдаст рекомендации и назначит контрольный звонок. Это особенно важно для речников, которые не хотят афишировать лечение.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если пациент работает на промышленном предприятии?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врач обязательно учитывает профессиональные вредности при подборе терапии. В реанимобиле есть специфические антидоты и оборудование для промышленных интоксикаций. При необходимости координируем действия с медицинской службой предприятия.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы с речниками и туристами?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем с жителями и гостями Рыбинска. Экстренная помощь возможна для речников и туристов с учетом их графика. Анонимность гарантируется, документы могут оформляться под псевдонимом.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как организованы выезды при сезонных ограничениях на мостах?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Диспетчер отслеживает статус мостов через Волгу и Шексну в реальном времени. При ограничениях используются альтернативные маршруты через Шексну или объездные пути. Время прибытия корректируется с учетом дорожной ситуации.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL CITIES BLOCK -->
+    <section class="cities-module" style="background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:60px 0; text-align:center;">
+      <div class="container">
+        <h2 class="section-title">Также выезжаем в соседние города</h2>
+        <p class="section-subtitle">Работаем без выходных. Подбираем ближайшую бригаду для минимального времени ожидания.</p>
+        <div class="cities-badges">
+          <a href="/rybinsk.html" class="city-badge active">Рыбинск (вы)</a>
+          <a href="/tutaev.html" class="city-badge">Тутаев</a>
+          <a href="/uglich.html" class="city-badge">Углич</a>
+          <a href="/myshkin.html" class="city-badge">Мышкин</a>
+          <a href="/yaroslavl.html" class="city-badge">Ярославль</a>
+          <a href="/balashikha.html" class="city-badge">Балашиха</a>
+          <span class="city-more">+ ещё 50 городов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="margin-bottom:12px;">⚠️ Не ждите — каждая минута на счету в Рыбинске!</h2>
+        <p style="max-width:650px; margin:0 auto 20px; opacity:0.95;">При экстренных состояниях промедление опасно. Звоните сейчас — бригада уже в пути по Рыбинску с учетом пробок, мостов и логистики.</p>
+        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;" class="cta-buttons">
+          <a href="tel:+74996485658" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px;">🚑 +7 (499) 648-56-58</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px; opacity:0.9;">⏱️ Среднее время ответа: 5 секунд | 🚑 Выезд по Рыбинску: 20-40 минут</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:+74996485658" class="sticky-btn" aria-label="Позвонить">🚑</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Контакты</h4><a href="tel:+74996485658">+7 (499) 648-56-58</a><a href="mailto:info@tyspas.ru">info@tyspas.ru</a><p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p></div>
+        <div class="footer-col"><h4>Информация</h4><a href="/blog/">Блог и статьи</a><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="/soglasie.html">Согласие на обработку ПДн</a><a href="/contacts.html">Контакты</a></div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.</div>
+      <div class="footer-bottom">© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Выезд медицинской бригады в Рыбинске — Скорая помощь 24/7",
+    "description": "Экстренный выезд полной бригады в Рыбинске: врач + медсестра + водитель. Реанимобиль, оборудование. Выезд за 20-40 минут.",
+    "url": "https://tyspas.ru/rybinsk/vyezd-brigady.html",
+    "mainEntity": {
+      "@type": "MedicalProcedure",
+      "name": "Экстренный выезд медицинской бригады в Рыбинске",
+      "procedureType": "Emergency Medical Response",
+      "location": {
+        "@type": "City",
+        "name": "Рыбинск",
+        "containedInPlace": {"@type": "State", "name": "Ярославская область"}
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tyspas.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Рыбинск", "item": "https://tyspas.ru/rybinsk.html"},
+        {"@type": "ListItem", "position": 3, "name": "Выезд бригады"}
+      ]
+    },
+    "about": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Как быстро приедет бригада в Центральный район?", "acceptedAnswer": {"@type": "Answer", "text": "Среднее время прибытия в центр Рыбинска — 20-30 минут."}},
+        {"@type": "Question", "name": "Можно ли вызвать бригаду анонимно в центре Рыбинска?", "acceptedAnswer": {"@type": "Answer", "text": "Абсолютно. Мы не передаем данные в государственные органы. Машина приезжает без опознавательных знаков."}},
+        {"@type": "Question", "name": "Что если пробки на Крестовой?", "acceptedAnswer": {"@type": "Answer", "text": "Врачи используют альтернативные маршруты: улицы через Шексну, объездные пути."}},
+        {"@type": "Question", "name": "Работаете ли вы в частном секторе Судоверфи?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем во всех типах застройки. В частном секторе врачи имеют навигацию с точными координатами."}},
+        {"@type": "Question", "name": "Можно ли отказаться от госпитализации после приезда бригады в Рыбинске?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Если состояние стабилизировалось и врач не видит угрозы жизни, вы можете отказаться от госпитализации."}},
+        {"@type": "Question", "name": "Что если пациент работает на промышленном предприятии?", "acceptedAnswer": {"@type": "Answer", "text": "Врач учитывает профессиональные вредности. В реанимобиле есть специфические антидоты для промышленных интоксикаций."}},
+        {"@type": "Question", "name": "Работаете ли вы с речниками и туристами?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем с жителями и гостями Рыбинска. Экстренная помощь возможна для речников и туристов."}},
+        {"@type": "Question", "name": "Как организованы выезды при сезонных ограничениях на мостах?", "acceptedAnswer": {"@type": "Answer", "text": "Диспетчер отслеживает статус мостов в реальном времени. При ограничениях используются альтернативные маршруты."}}
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); overlay.classList.toggle('active');
+      menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    overlay.addEventListener('click', () => { navMenu.classList.remove('active'); overlay.classList.remove('active'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; });
+
+    function toggleFaq(el) {
+      const a = el.nextElementSibling; const i = el.querySelector('.faq-icon');
+      a.classList.toggle('open'); i.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

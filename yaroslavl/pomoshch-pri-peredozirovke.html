@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Помощь при передозировке в Ярославле — Реанимация на выезде 24/7 | ТыСпас</title>
+  <meta name="description" content="Экстренная помощь при передозировке в Ярославле. Введение налоксона, ИВЛ, реанимация на месте. Выезд в любой район за 20-40 минут. Анонимно. Звоните +7 (499) 648-56-58.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/yaroslavl/pomoshch-pri-peredozirovke.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Помощь при передозировке в Ярославле — Реанимация на выезде 24/7">
+  <meta property="og:description" content="Спасение жизни при передозировке в Ярославле. Налоксон, ИВЛ, реанимация. Анонимно. Выезд за 20-40 минут.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/yaroslavl/pomoshch-pri-peredozirovke.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .section-title { font-size:2rem; font-weight:800; text-align:center; margin-bottom:0.8rem; color:var(--primary-dark); }
+    .section-subtitle { text-align:center; color:var(--text-light); margin-bottom:2.5rem; max-width:750px; margin-inline:auto; }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* HERO */
+    .hero { background:linear-gradient(rgba(30,58,138,0.88), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80') center/cover; color:#fff; padding:80px 0; text-align:center; }
+    .hero h1 { font-size:2.8rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .hero p { font-size:18px; max-width:800px; margin:0 auto; opacity:0.95; }
+
+    /* CONTENT */
+    .content-section { background:#fff; padding:80px 0; }
+    .content-wrapper { max-width:900px; margin:0 auto; }
+    .content-wrapper h2 { font-size:1.8rem; font-weight:800; color:var(--primary-dark); margin:40px 0 20px; }
+    .content-wrapper h3 { font-size:1.4rem; font-weight:700; color:var(--text); margin:30px 0 15px; }
+    .content-wrapper h4 { font-size:1.2rem; font-weight:700; color:var(--text); margin:20px 0 10px; }
+    .content-wrapper p { margin-bottom:16px; color:var(--text-light); }
+    .content-wrapper ul, .content-wrapper ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .content-wrapper li { margin-bottom:8px; }
+    .warning-box { background:#fef2f2; border-left:4px solid #ef4444; padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .info-box { background:#eff6ff; border-left:4px solid var(--primary); padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .highlight-text { font-weight:600; color:var(--text); }
+
+    /* PRICING TABLE */
+    .pricing-table { width:100%; border-collapse:collapse; margin:24px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:var(--shadow); }
+    .pricing-table th, .pricing-table td { padding:16px; text-align:left; border-bottom:1px solid #e5e7eb; }
+    .pricing-table th { background:var(--primary); color:#fff; font-weight:700; }
+    .pricing-table tr:hover { background:#f8fafc; }
+    .price-val { font-weight:800; color:var(--primary); }
+
+    /* FAQ */
+    .faq-item { background:#fff; border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid #e5e7eb; }
+    .faq-q { padding:16px 18px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:0.2s; user-select:none; }
+    .faq-q:hover { color:var(--primary); background:#fafbfc; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease-out, padding 0.35s; padding:0 18px; font-size:14px; color:var(--text-light); line-height:1.6; }
+    .faq-a.open { max-height:400px; padding-bottom:16px; }
+    .faq-icon { transition:0.3s; font-size:16px; color:var(--text-light); }
+    .faq-icon.open { transform:rotate(180deg); color:var(--primary); }
+
+    /* CTA & FOOTER */
+    .cta-section { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 90px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+    .sticky-tooltip { background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px; font-size:11px; font-weight:600; white-space:nowrap; opacity:0; transform:translateY(4px); transition:0.3s; pointer-events:none; }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn { width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite; transition:0.3s; }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring { 0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); } 70% { box-shadow:0 0 0 14px rgba(245,158,11,0); } 100% { box-shadow:0 0 0 0 rgba(245,158,11,0); } }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .hero h1 { font-size:2rem; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-50-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="/blog/">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="/">Главная</a> <span>/</span> <a href="/yaroslavl.html">Ярославль</a> <span>/</span> <span>Помощь при передозировке</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Помощь при передозировке в Ярославле — экстренная реанимация и спасение жизни в любом районе</h1>
+        <p>Экстренная помощь при передозировке наркотиками, алкоголем, седативными препаратами в Ярославле. Введение налоксона, ИВЛ, реанимация на месте. Выезд в Дзержинский, Кировский, Красноперекопский, Фрунзенский, Заволжский районы за 20-40 минут. Звоните: +7 (499) 648-56-58.</p>
+        <div style="margin-top:30px;">
+          <a href="tel:+74996485658" class="btn btn-primary" style="font-size:18px; padding:18px 36px;">🚑 Вызвать реанимацию в Ярославле СРОЧНО</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-section" id="details">
+      <div class="container">
+        <div class="content-wrapper">
+          
+          <h2>Почему помощь при передозировке в Ярославле требует особого подхода</h2>
+          <p>Ярославль — областной центр с уникальной промышленной и туристической инфраструктурой, что создает специфические риски передозировок:</p>
+          <ul>
+            <li><strong>Промышленные факторы:</strong> Наличие крупных предприятий (НПЗ «Славнефть-ЯНОС», завод «Дизель-Аппарат», «Ярославский бройлер») создает риск профессиональных интоксикаций химическими веществами, которые могут усугублять действие наркотических препаратов или алкоголя.</li>
+            <li><strong>Туристический поток:</strong> Ярославль — город Золотого кольца, что привлекает туристов и командировочных, склонных к употреблению сильнодействующих веществ «в поездке» для борьбы с усталостью или стрессом, что повышает риск передозировки.</li>
+            <li><strong>Сезонность:</strong> Летний туристический сезон и зимние праздники создают пики употребления психоактивных веществ, требующие быстрого реагирования служб помощи.</li>
+            <li><strong>Логистические вызовы:</strong> Город разделен реками Волгой и Которослью, имеет мосты с сезонными ограничениями. Наши бригады знают альтернативные маршруты для быстрого прибытия даже при закрытии мостов или пробках на Московском проспекте.</li>
+          </ul>
+          <p>Эти факторы делают экстренную помощь при передозировке в Ярославле особенно важной: наши врачи знают местные риски, имеют специфические антидоты и знают логистику города для быстрого прибытия даже в часы пик.</p>
+          
+          <div class="warning-box">
+            <strong>⚠️ СМЕРТЕЛЬНАЯ ОПАСНОСТЬ:</strong> При остановке дыхания необратимые изменения в головном мозге начинаются уже через 4-6 минут. Каждая минута промедления снижает шансы на выживание без неврологических последствий.
+          </div>
+
+          <h2>Передозировка в Ярославле: критические симптомы, требующие немедленного вызова</h2>
+          <p>Передозировка — это не просто «сильное опьянение». Это жизнеугрожающее состояние, при котором концентрация токсического вещества в крови превышает порог, совместимый с нормальной работой жизненно важных органов.</p>
+          <p><strong>Срочно звоните врачу в Ярославле, если наблюдаете следующие симптомы:</strong></p>
+          <ul>
+            <li><strong>Потеря сознания:</strong> Человека невозможно разбудить, он не реагирует на боль или громкие звуки. Зрачки не реагируют на свет или имеют точечный размер (при опиоидной передозировке).</li>
+            <li><strong>Угнетение дыхания:</strong> Дыхание редкое (менее 8 вдохов в минуту), поверхностное, с длительными паузами (апное) или полностью отсутствует.</li>
+            <li><strong>Цианоз:</strong> Посинение губ, кончиков пальцев, носогубного треугольника — признак острой гипоксии (нехватки кислорода), усугубляемой экологическими факторами Ярославля.</li>
+            <li><strong>Судороги:</strong> Генерализованные судорожные припадки, непроизвольные подергивания мышц.</li>
+            <li><strong>Пена изо рта:</strong> Часто сопровождается хриплым, булькающим дыханием — признак отека легких или аспирации.</li>
+            <li><strong>Резкое падение давления:</strong> Пульс нитевидный, слабый или не прощупывается. Кожа бледная, холодная, липкая.</li>
+            <li><strong>Профессиональные факторы:</strong> Если пациент работает на промышленном предприятии и есть подозрение на контакт с химикатами, которые могут усилить токсический эффект.</li>
+            <li><strong>Туристический фактор:</strong> Если пациент — турист или командировочный, употребивший неизвестное вещество «в поездке».</li>
+          </ul>
+
+          <h2>Алгоритм экстренной помощи при передозировке в Ярославле</h2>
+          <p>Наши реанимационные бригады работают по международному протоколу ABCDE, адаптированному под местные условия Ярославля:</p>
+          
+          <ol>
+            <li><strong>A (Airway) — обеспечение проходимости дыхательных путей:</strong> Очистка ротоглотки от рвотных масс, введение воздуховода, при необходимости — интубация трахеи. Особенно важно в историческом центре с ограниченным доступом.</li>
+            <li><strong>B (Breathing) — поддержка дыхания:</strong> При угнетении или остановке дыхания используется мешок Амбу с маской или портативный аппарат ИВЛ. Подается 100% кислород для борьбы с гипоксией, усугубляемой экологическими факторами Ярославля.</li>
+            <li><strong>C (Circulation) — поддержка кровообращения:</strong> Контроль пульса и давления. При остановке сердца — немедленное начало сердечно-легочной реанимации (непрямой массаж сердца) и дефибрилляция при фибрилляции желудочков.</li>
+            <li><strong>D (Disability) — неврологическая оценка:</strong> Проверка уровня сознания по шкале Глазго, реакции зрачков, исключение судорожной активности. Введение специфических антидотов при подтвержденной передозировке, с учетом промышленных факторов.</li>
+            <li><strong>E (Exposure) — полный осмотр и защита:</strong> Осмотр пациента на предмет травм, инъекционных следов, сыпи. Поддержание температуры тела, предотвращение переохлаждения. Сбор информации о возможных промышленных контактах или туристической нагрузке.</li>
+          </ol>
+
+          <h2>Специфические антидоты для Ярославля: что и когда применяется</h2>
+          <p>Эффективность реанимации при передозировке часто зависит от своевременного введения антидота. Наши врачи имеют в арсенале полный набор антидотов, включая специфические для промышленных интоксикаций:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Вещество</th><th>Антидот</th><th>Механизм действия</th><th>Когда применяется в Ярославле</th></tr>
+            <tr><td><strong>Опиоиды</strong><br><small>Героин, морфин, фентанил, метадон</small></td><td>Налоксон (Наркан)</td><td>Блокирует опиоидные рецепторы, вытесняя яд</td><td>При угнетении дыхания, точечных зрачках, коме, особенно у туристов и работников промышленных зон</td></tr>
+            <tr><td><strong>Бензодиазепины</strong><br><small>Феназепам, диазепам, клоназепам</small></td><td>Флумазенил (Анексат)</td><td>Конкурентный антагонист бензодиазепиновых рецепторов</td><td>При глубокой седации, угнетении дыхания после приема транквилизаторов для борьбы с усталостью в поездке</td></tr>
+            <tr><td><strong>Алкоголь + промышленные химикаты</strong><br><small>Суррогаты, растворители</small></td><td>Этанол (в/в) или фомепизол</td><td>Конкурирует с токсичными спиртами за фермент алкогольдегидрогеназу</td><td>При подозрении на комбинированную интоксикацию у работников промышленных зон Ярославля</td></tr>
+            <tr><td><strong>Психостимуляторы</strong><br><small>Амфетамин, кокаин, мефедрон</small></td><td>Симптоматическая терапия</td><td>Седация, контроль давления, температуры, судорог</td><td>При психомоторном возбуждении, гипертермии, аритмии у туристов и командировочных</td></tr>
+            <tr><td><strong>Комбинированные интоксикации</strong><br><small>Алкоголь + лекарства + промышленные вещества</small></td><td>Комплексная терапия</td><td>Поддержка жизненных функций, специфические антидоты</td><td>При подозрении на множественную интоксикацию, характерную для промышленных работников Ярославля</td></tr>
+          </table>
+          <p><span class="highlight-text">Важно:</span> Антидоты вводятся только после оценки состояния и под контролем витальных функций. Неправильное применение может ухудшить состояние пациента.</p>
+
+          <h2>Стоимость экстренной помощи при передозировке в Ярославле</h2>
+          <p>При передозировке речь идет о спасении жизни, поэтому мы минимизируем бюрократию. Стоимость фиксируется «под ключ» и включает все необходимые манипуляции и препараты. Никаких скрытых доплат за «пробки на Московском проспекте», «сезонные ограничения на мостах» или «удаленность района».</p>
+          <table class="pricing-table">
+            <tr><th>Вид помощи</th><th>Что входит</th><th>Время</th><th>Стоимость</th></tr>
+            <tr><td><strong>Экстренная реанимация на месте</strong></td><td>ABC-протокол, антидоты, ИВЛ, мониторинг с учетом промышленных факторов</td><td>1.5-3 часа</td><td>от 8 000 ₽</td></tr>
+            <tr><td><strong>Транспортировка в реанимацию</strong></td><td>Сопровождение до стационара, непрерывный мониторинг, поддержка в пути с учетом логистики Ярославля и мостов</td><td>Зависит от расстояния</td><td>от 7 000 ₽ + км</td></tr>
+            <tr><td><strong>Комплекс (Реанимация + Транспортировка)</strong></td><td>Полный цикл спасения и доставки в профильный стационар с учетом местных условий</td><td>3+ часа</td><td>от 12 000 ₽</td></tr>
+            <tr><td><strong>Специфические антидоты</strong></td><td>Налоксон, флумазенил, фомепизол и другие специфические препараты</td><td>По назначению</td><td>Включено в стоимость</td></tr>
+          </table>
+          <p><span class="highlight-text">Выезд включен в стоимость по всему Ярославлю.</span> Работаем также в ближайших населенных пунктах: Рыбинск, Тутаев, Углич, Переславль-Залесский.</p>
+
+          <h2>Первая помощь до приезда врача в Ярославле</h2>
+          <p>Пока реанимационная бригада едет, ваши действия могут спасти жизнь. Строго следуйте алгоритму с учетом местных условий:</p>
+          <ul>
+            <li><strong>Проверьте сознание и дыхание:</strong> Если человек без сознания и не дышит — немедленно начинайте сердечно-легочную реанимацию (непрямой массаж сердца + искусственное дыхание).</li>
+            <li><strong>Уложите в устойчивое боковое положение:</strong> Если дыхание есть, но человек без сознания — это предотвратит аспирацию рвотными массами. В историческом центре обеспечьте доступ к пациенту для бригады.</li>
+            <li><strong>Освободите дыхательные пути:</strong> Расстегните тесную одежду, откройте окна. В частном секторе Заволжского района убедитесь, что проход к пациенту свободен для бригады.</li>
+            <li><strong>Соберите информацию:</strong> Найдите упаковки от лекарств, шприцы, бутылки, этикетки от технических жидкостей — это поможет врачу определить вещество и подобрать антидот. Особенно важно для работников промышленных предприятий и туристов.</li>
+            <li><strong>Подготовьте место:</strong> Освободите проход к пациенту, обеспечьте хорошее освещение. В историческом центре согласуйте доступ с УК или консьержем.</li>
+          </ul>
+          <div class="warning-box">
+            <strong>⛔ КАТЕГОРИЧЕСКИ НЕЛЬЗЯ:</strong>
+            <ul style="margin-top:8px; margin-left:16px;">
+              <li>Пытаться напоить водой или вызвать рвоту у человека без сознания — риск захлебнуться.</li>
+              <li>Давать любые лекарства без назначения врача — это может усугубить состояние, особенно при промышленных интоксикациях.</li>
+              <li>Оставлять пациента одного — состояние может ухудшиться за секунды, особенно у туристов без местной поддержки.</li>
+              <li>Пытаться «вылечиться» новой дозой алкоголя или лекарств — это лишь усугубит интоксикацию.</li>
+            </ul>
+          </div>
+
+          <h2>Часто задаваемые вопросы по помощи при передозировке в Ярославле</h2>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Сколько времени действует налоксон?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Налоксон действует 30-90 минут, в то время как многие опиоиды (особенно пролонгированные формы) — несколько часов. Поэтому после введения антидота необходим непрерывный мониторинг и, возможно, повторное введение. Пациент должен находиться под наблюдением минимум 4-6 часов.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли вводить налоксон самостоятельно в Ярославле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Налоксон — рецептурный препарат, его применение требует медицинских показаний и контроля. Неправильная дозировка может спровоцировать острый абстинентный синдром («ломку») с риском для сердца. В экстренной ситуации до приезда врача можно использовать только базовые меры реанимации (СЛР, положение на боку).</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если передозировка произошла у туриста в Ярославле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Алгоритм тот же: вызвать реанимацию, обеспечить проходимость дыхательных путей, контролировать дыхание. Важно сообщить врачу о возможных промышленных контактах или туристической нагрузке. Анонимность гарантируется, документы могут оформляться под псевдонимом.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Попадает ли информация о передозировке в полицию?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Наша клиника соблюдает врачебную тайну. Данные о лечении не передаются в правоохранительные органы без судебного решения. Наша цель — спасти жизнь, а не создавать проблемы. Однако в случаях, угрожающих жизни, врач может быть обязан вызвать городскую скорую для госпитализации — это стандартная практика для обеспечения непрерывности помощи.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как быстро приедет бригада в Дзержинский район?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Среднее время прибытия в центр Ярославля — 20-30 минут. Врачи знают короткие пути через исторические улицы и объездные маршруты, что позволяет избежать пробок на основных трассах.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что если пациент работает на промышленном предприятии?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Врач обязательно учитывает профессиональные вредности при подборе терапии. В реанимобиле есть специфические антидоты и оборудование для промышленных интоксикаций. При необходимости координируем действия с медицинской службой предприятия.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы с туристами и командировочными?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем с жителями и гостями Ярославля. Экстренная помощь возможна для туристов и командировочных с учетом их графика. Анонимность гарантируется, документы могут оформляться под псевдонимом.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как организованы выезды при сезонных ограничениях на мостах?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Диспетчер отслеживает статус мостов через Волгу и Которосль в реальном времени. При ограничениях используются альтернативные маршруты через Которосль или объездные пути. Время прибытия корректируется с учетом дорожной ситуации.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL CITIES BLOCK -->
+    <section class="cities-module" style="background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:60px 0; text-align:center;">
+      <div class="container">
+        <h2 class="section-title">Также выезжаем в соседние города</h2>
+        <p class="section-subtitle">Работаем без выходных. Подбираем ближайшую бригаду для минимального времени ожидания.</p>
+        <div class="cities-badges">
+          <a href="/yaroslavl.html" class="city-badge active">Ярославль (вы)</a>
+          <a href="/rybinsk.html" class="city-badge">Рыбинск</a>
+          <a href="/tutaev.html" class="city-badge">Тутаев</a>
+          <a href="/uglich.html" class="city-badge">Углич</a>
+          <a href="/pereslavl.html" class="city-badge">Переславль-Залесский</a>
+          <a href="/balashikha.html" class="city-badge">Балашиха</a>
+          <span class="city-more">+ ещё 50 городов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="margin-bottom:12px;">⚠️ Счет идет на минуты в Ярославле!</h2>
+        <p style="max-width:650px; margin:0 auto 20px; opacity:0.95;">При передозировке каждая секунда на счету. Не ждите, не надейтесь на «авось». Звоните сейчас — реанимация уже в пути по Ярославлю с учетом пробок, мостов и логистики.</p>
+        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;" class="cta-buttons">
+          <a href="tel:+74996485658" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px;">🚑 +7 (499) 648-56-58</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px; opacity:0.9;">⏱️ Среднее время ответа: 5 секунд | 🚑 Выезд по Ярославлю: 20-40 минут</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:+74996485658" class="sticky-btn" aria-label="Позвонить">🚑</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Контакты</h4><a href="tel:+74996485658">+7 (499) 648-56-58</a><a href="mailto:info@tyspas.ru">info@tyspas.ru</a><p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p></div>
+        <div class="footer-col"><h4>Информация</h4><a href="/blog/">Блог и статьи</a><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="/soglasie.html">Согласие на обработку ПДн</a><a href="/contacts.html">Контакты</a></div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.</div>
+      <div class="footer-bottom">© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Помощь при передозировке в Ярославле — Реанимация на выезде 24/7",
+    "description": "Экстренная помощь при передозировке в Ярославле. Введение налоксона, ИВЛ, реанимация на месте. Выезд за 20-40 минут.",
+    "url": "https://tyspas.ru/yaroslavl/pomoshch-pri-peredozirovke.html",
+    "mainEntity": {
+      "@type": "MedicalProcedure",
+      "name": "Экстренная реанимация при передозировке в Ярославле",
+      "procedureType": "Emergency Resuscitation",
+      "location": {
+        "@type": "City",
+        "name": "Ярославль",
+        "containedInPlace": {"@type": "State", "name": "Ярославская область"}
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tyspas.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Ярославль", "item": "https://tyspas.ru/yaroslavl.html"},
+        {"@type": "ListItem", "position": 3, "name": "Помощь при передозировке"}
+      ]
+    },
+    "about": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Сколько времени действует налоксон?", "acceptedAnswer": {"@type": "Answer", "text": "Налоксон действует 30-90 минут. Необходим мониторинг 4-6 часов из-за риска 'второй волны'."}},
+        {"@type": "Question", "name": "Можно ли вводить налоксон самостоятельно в Ярославле?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Налоксон — рецептурный препарат, требующий медицинского контроля."}},
+        {"@type": "Question", "name": "Что если передозировка произошла у туриста в Ярославле?", "acceptedAnswer": {"@type": "Answer", "text": "Алгоритм тот же: вызвать реанимацию, обеспечить дыхание, положение на боку. Анонимность гарантируется."}},
+        {"@type": "Question", "name": "Попадает ли информация в полицию?", "acceptedAnswer": {"@type": "Answer", "text": "Мы соблюдаем врачебную тайну. Данные не передаются без судебного решения. Наша цель — спасти жизнь."}},
+        {"@type": "Question", "name": "Как быстро приедет бригада в Дзержинский район?", "acceptedAnswer": {"@type": "Answer", "text": "Среднее время прибытия в центр Ярославля — 20-30 минут."}},
+        {"@type": "Question", "name": "Что если пациент работает на промышленном предприятии?", "acceptedAnswer": {"@type": "Answer", "text": "Врач учитывает профессиональные вредности. В реанимобиле есть специфические антидоты для промышленных интоксикаций."}},
+        {"@type": "Question", "name": "Работаете ли вы с туристами и командировочными?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем с жителями и гостями Ярославля. Экстренная помощь возможна для туристов и командировочных."}},
+        {"@type": "Question", "name": "Как организованы выезды при сезонных ограничениях на мостах?", "acceptedAnswer": {"@type": "Answer", "text": "Диспетчер отслеживает статус мостов в реальном времени. При ограничениях используются альтернативные маршруты."}}
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); overlay.classList.toggle('active');
+      menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    overlay.addEventListener('click', () => { navMenu.classList.remove('active'); overlay.classList.remove('active'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; });
+
+    function toggleFaq(el) {
+      const a = el.nextElementSibling; const i = el.querySelector('.faq-icon');
+      a.classList.toggle('open'); i.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

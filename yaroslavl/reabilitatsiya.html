@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реабилитация в Ярославле — Поддержка и профилактика срывов после лечения | ТыСпас</title>
+  <meta name="description" content="Профессиональная реабилитация в Ярославле после лечения алкогольной и наркотической зависимости. Группы поддержки, социальная адаптация, психологическое сопровождение с учетом промышленных факторов. Анонимно. Звоните +7 (499) 648-56-58.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/yaroslavl/reabilitatsiya.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Реабилитация в Ярославле — Поддержка и профилактика срывов">
+  <meta property="og:description" content="Группы поддержки, социальная адаптация, психологическое сопровождение в Ярославле. Анонимно. 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/yaroslavl/reabilitatsiya.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .section-title { font-size:2rem; font-weight:800; text-align:center; margin-bottom:0.8rem; color:var(--primary-dark); }
+    .section-subtitle { text-align:center; color:var(--text-light); margin-bottom:2.5rem; max-width:750px; margin-inline:auto; }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* HERO */
+    .hero { background:linear-gradient(rgba(30,58,138,0.88), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80') center/cover; color:#fff; padding:80px 0; text-align:center; }
+    .hero h1 { font-size:2.8rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .hero p { font-size:18px; max-width:800px; margin:0 auto; opacity:0.95; }
+
+    /* CONTENT */
+    .content-section { background:#fff; padding:80px 0; }
+    .content-wrapper { max-width:900px; margin:0 auto; }
+    .content-wrapper h2 { font-size:1.8rem; font-weight:800; color:var(--primary-dark); margin:40px 0 20px; }
+    .content-wrapper h3 { font-size:1.4rem; font-weight:700; color:var(--text); margin:30px 0 15px; }
+    .content-wrapper h4 { font-size:1.2rem; font-weight:700; color:var(--text); margin:20px 0 10px; }
+    .content-wrapper p { margin-bottom:16px; color:var(--text-light); }
+    .content-wrapper ul, .content-wrapper ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .content-wrapper li { margin-bottom:8px; }
+    .warning-box { background:#fef2f2; border-left:4px solid #ef4444; padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .info-box { background:#eff6ff; border-left:4px solid var(--primary); padding:16px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .highlight-text { font-weight:600; color:var(--text); }
+
+    /* PRICING TABLE */
+    .pricing-table { width:100%; border-collapse:collapse; margin:24px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:var(--shadow); }
+    .pricing-table th, .pricing-table td { padding:16px; text-align:left; border-bottom:1px solid #e5e7eb; }
+    .pricing-table th { background:var(--primary); color:#fff; font-weight:700; }
+    .pricing-table tr:hover { background:#f8fafc; }
+    .price-val { font-weight:800; color:var(--primary); }
+
+    /* FAQ */
+    .faq-item { background:#fff; border-radius:var(--radius); margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid #e5e7eb; }
+    .faq-q { padding:16px 18px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:0.2s; user-select:none; }
+    .faq-q:hover { color:var(--primary); background:#fafbfc; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease-out, padding 0.35s; padding:0 18px; font-size:14px; color:var(--text-light); line-height:1.6; }
+    .faq-a.open { max-height:400px; padding-bottom:16px; }
+    .faq-icon { transition:0.3s; font-size:16px; color:var(--text-light); }
+    .faq-icon.open { transform:rotate(180deg); color:var(--primary); }
+
+    /* CTA & FOOTER */
+    .cta-section { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 90px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+    .sticky-tooltip { background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px; font-size:11px; font-weight:600; white-space:nowrap; opacity:0; transform:translateY(4px); transition:0.3s; pointer-events:none; }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn { width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite; transition:0.3s; }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring { 0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); } 70% { box-shadow:0 0 0 14px rgba(245,158,11,0); } 100% { box-shadow:0 0 0 0 rgba(245,158,11,0); } }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .hero h1 { font-size:2rem; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-50-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="/blog/">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="/">Главная</a> <span>/</span> <a href="/yaroslavl.html">Ярославль</a> <span>/</span> <span>Реабилитация</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Реабилитация в Ярославле — поддержка, социальная адаптация, профилактика срывов в любом районе</h1>
+        <p>Профессиональная реабилитация в Ярославле после лечения алкогольной и наркотической зависимости. Группы поддержки, социальная адаптация, психологическое сопровождение с учетом промышленных факторов и туристического потока. Анонимно. Звоните: +7 (499) 648-56-58.</p>
+        <div style="margin-top:30px;">
+          <a href="tel:+74996485658" class="btn btn-primary" style="font-size:18px; padding:18px 36px;">📞 Записаться на реабилитационную программу в Ярославле</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-section" id="details">
+      <div class="container">
+        <div class="content-wrapper">
+          
+          <h2>Почему реабилитация в Ярославле имеет свои особенности</h2>
+          <p>Ярославль — областной центр с уникальной промышленной и туристической инфраструктурой, что влияет на процесс восстановления и подход к профилактике срывов:</p>
+          <ul>
+            <li><strong>Промышленные факторы:</strong> Работники крупных предприятий (НПЗ «Славнефть-ЯНОС», завод «Дизель-Аппарат», «Ярославский бройлер») подвержены профессиональному стрессу и вредным условиям, что повышает риск «производственного» срыва. Реабилитация адаптируется под эти условия, помогая пациенту справляться со стрессом без употребления.</li>
+            <li><strong>Туристический поток:</strong> Ярославль — город Золотого кольца, что привлекает туристов и командировочных, которые могут нуждаться в реабилитации после эпизодического употребления «в поездке», переросшего в зависимость.</li>
+            <li><strong>Сезонность:</strong> Летний туристический сезон и зимние праздники создают пики употребления алкоголя, требующие быстрого доступа к услугам реабилитации.</li>
+            <li><strong>Логистические вызовы:</strong> Город разделен реками Волгой и Которослью, имеет мосты и историческую застройку. Наши программы реабилитации предлагают гибкие форматы: очные группы в разных районах Ярославля, онлайн-поддержка, индивидуальные сессии на дому.</li>
+          </ul>
+          <p>Эти факторы делают реабилитацию в Ярославле особенно важной: программа работает с пациентом в естественной среде, учитывает бытовые триггеры, вовлекает семью — это повышает эффективность профилактики срывов и способствует долгосрочной трезвости.</p>
+          
+          <div class="info-box">
+            <strong>✅ Местная специфика:</strong> Наши программы реабилитации адаптированы под ярославские факторы риска: промышленные вредности, туристическая нагрузка, сезонность, логистика по районам.
+          </div>
+
+          <h2>Форматы реабилитационных программ в Ярославле</h2>
+          <p>Мы предлагаем несколько форматов работы, адаптированных под местные условия:</p>
+          
+          <h3>1. Амбулаторная реабилитация для жителей Ярославля</h3>
+          <p>Пациент живет дома, но регулярно посещает занятия в центре или онлайн. Подходит для тех, кто сохранил работу, семью, социальные связи в Ярославле.</p>
+          <ul>
+            <li><strong>Продолжительность:</strong> 3-12 месяцев.</li>
+            <li><strong>Формат:</strong> Групповые занятия 2-3 раза в неделю в разных районах Ярославля (Дзержинский, Кировский, Красноперекопский), индивидуальные сессии 1 раз в 2 недели.</li>
+            <li><strong>Фокус:</strong> Профилактика срывов с учетом промышленных факторов, социальная адаптация, профессиональная реабилитация для работников промышленных зон.</li>
+          </ul>
+
+          <h3>2. Полустационарная программа в Ярославле</h3>
+          <p>Пациент проводит в центре часть дня (например, с 9:00 до 18:00), а вечера и выходные — дома. Баланс между поддержкой и самостоятельностью с учетом местных условий.</p>
+          <ul>
+            <li><strong>Продолжительность:</strong> 1-6 месяцев.</li>
+            <li><strong>Формат:</strong> Ежедневные занятия, терапия, трудовая деятельность в центре Ярославля.</li>
+            <li><strong>Фокус:</strong> Формирование распорядка дня с учетом работы на производстве или туристического графика, навыков самоорганизации, постепенное возвращение к самостоятельной жизни в ярославских условиях.</li>
+          </ul>
+
+          <h3>3. Стационарная реабилитация с выездом из Ярославля</h3>
+          <p>Проживание в реабилитационном центре под круглосуточным наблюдением. Подходит для тяжелых случаев, отсутствия поддержки дома, высокого риска срыва у жителей Ярославля.</p>
+          <ul>
+            <li><strong>Продолжительность:</strong> 3-12 месяцев.</li>
+            <li><strong>Формат:</strong> Полная программа: терапия, труд, отдых, духовное развитие в партнерских центрах.</li>
+            <li><strong>Фокус:</strong> Глубокая проработка причин зависимости с учетом ярославских факторов, формирование новой идентичности.</li>
+          </ul>
+
+          <h3>4. Пост-реабилитационное сопровождение в Ярославле</h3>
+          <p>Поддержка после завершения основной программы. Помогает закрепить результат и предотвратить «откат» с учетом местных триггеров.</p>
+          <ul>
+            <li><strong>Продолжительность:</strong> 6-24 месяца.</li>
+            <li><strong>Формат:</strong> Группы поддержки 1 раз в неделю в разных районах Ярославля, контрольные звонки, экстренная помощь при угрозе срыва.</li>
+            <li><strong>Фокус:</strong> Долгосрочная стабилизация с учетом промышленных факторов и туристической нагрузки, интеграция в общество Ярославля.</li>
+          </ul>
+
+          <h2>Этапы реабилитационной программы в Ярославле</h2>
+          <p>Независимо от формата, программа строится по единой логике, адаптированной под местные условия:</p>
+          
+          <ol>
+            <li><strong>Оценка и планирование с учетом ярославской специфики (1-2 недели):</strong> Психологическая диагностика, оценка рисков с учетом промышленных вредностей и туристической нагрузки, постановка индивидуальных целей, составление плана реабилитации.</li>
+            <li><strong>Стабилизация (1-2 месяца):</strong> Работа с острой тягой, формирование навыков саморегуляции с учетом работы на производстве или туристического графика, восстановление режима дня, начало групповой терапии в Ярославле.</li>
+            <li><strong>Проработка (2-6 месяцев):</strong> Глубокая работа с причинами зависимости (травмы, убеждения, отношения) с учетом ярославских факторов, развитие эмоционального интеллекта, коммуникативных навыков для жизни в крупных ЖК или туристической среде.</li>
+            <li><strong>Социальная адаптация (2-4 месяца):</strong> Трудоустройство или обучение с учетом промышленных предприятий Ярославля, восстановление семейных отношений, участие в общественной жизни города.</li>
+            <li><strong>Подготовка к завершению (1 месяц):</strong> Разработка индивидуального плана профилактики срывов с учетом промышленных факторов и туристической нагрузки, формирование сети поддержки в Ярославле, прощание с группой.</li>
+            <li><strong>Пост-сопровождение (6-24 месяца):</strong> Контрольные встречи в разных районах Ярославля, группы поддержки, экстренная помощь при необходимости с учетом местных триггеров.</li>
+          </ol>
+
+          <h2>Методы работы: доказательная реабилитация с учетом ярославской специфики</h2>
+          <p>Мы используем только методы с подтвержденной эффективностью, адаптированные под местные условия:</p>
+          
+          <table class="pricing-table">
+            <tr><th>Метод</th><th>Как работает</th><th>Когда применяется в Ярославле</th></tr>
+            <tr><td><strong>Когнитивно-поведенческая терапия (КПТ)</strong></td><td>Выявляет и меняет искаженные мысли и паттерны поведения, ведущие к употреблению</td><td>При тревоге, депрессии, низкой самооценке, триггерах срыва, особенно у работников промышленных зон и туристов</td></tr>
+            <tr><td><strong>Диалектическая поведенческая терапия (ДПТ)</strong></td><td>Учит навыкам регуляции эмоций, переносимости дистресса, межличностной эффективности</td><td>При импульсивности, самоповреждающем поведении, пограничных состояниях, особенно при промышленном стрессе</td></tr>
+            <tr><td><strong>Мотивационное интервью</strong></td><td>Помогает пациенту самостоятельно прийти к решению об изменениях, без давления</td><td>При амбивалентности, низкой мотивации, отрицании проблемы, особенно у жителей крупных ЖК и гостей города</td></tr>
+            <tr><td><strong>Семейные системы</strong></td><td>Работает с динамикой отношений, созависимостью, коммуникацией в семье</td><td>При конфликтах, недоверии, нарушении границ в семье, особенно для семей работников промышленных предприятий Ярославля</td></tr>
+            <tr><td><strong>Трудовая терапия</strong></td><td>Восстанавливает навыки самоорганизации, ответственности, командной работы</td><td>На этапе социальной адаптации, для возвращения к труду на предприятиях Ярославля</td></tr>
+            <tr><td><strong>Группы взаимопомощи (12 шагов, Смарт)</strong></td><td>Поддержка людей с общим опытом, обмен стратегиями преодоления</td><td>На всех этапах, особенно для профилактики срывов с учетом ярославских триггеров</td></tr>
+          </table>
+          <p><span class="highlight-text">Важно:</span> Все специалисты имеют профильное образование, сертификацию по используемым методам и регулярную супервизию. Программы адаптируются под ярославские факторы риска.</p>
+
+          <h2>Стоимость реабилитации в Ярославле</h2>
+          <p>Цены фиксированы и не зависят от района. Никаких скрытых доплат за «удаленность» или «сложность заезда». Возможны пакетные скидки при оплате курса.</p>
+          <table class="pricing-table">
+            <tr><th>Формат</th><th>Продолжительность</th><th>Что входит</th><th>Стоимость</th></tr>
+            <tr><td><strong>Амбулаторная программа</strong></td><td>3 месяца</td><td>Группы 2×/нед в Ярославле, индивидуальная терапия 1×/2 нед, сопровождение с учетом местных факторов</td><td>от 25 000 ₽</td></tr>
+            <tr><td><strong>Полустационарная программа</strong></td><td>1-3 месяца</td><td>Ежедневные занятия в Ярославле, терапия, труд, питание, проживание (опционально) с учетом работы на производстве или туристического графика</td><td>от 45 000 ₽/мес</td></tr>
+            <tr><td><strong>Стационарная программа</strong></td><td>3-12 месяцев</td><td>Полный цикл: терапия, труд, отдых, духовное развитие в партнерских центрах с выездом из Ярославля</td><td>от 60 000 ₽/мес</td></tr>
+            <tr><td><strong>Пост-сопровождение</strong></td><td>6-24 месяца</td><td>Группы поддержки 1×/нед в Ярославле, контрольные звонки, экстренная помощь при угрозе срыва</td><td>от 5 000 ₽/мес</td></tr>
+          </table>
+          <p><span class="highlight-text">Онлайн-формат доступен по той же цене.</span> Работаем по всему Ярославлю: Дзержинский, Кировский, Красноперекопский, Фрунзенский, Заволжский районы и другие. При оплате от 6 месяцев — скидка 10%.</p>
+
+          <h2>Как записаться на реабилитацию в Ярославле</h2>
+          <ol>
+            <li><strong>Первичная консультация:</strong> Вы связываетесь с нами по телефону +7 (499) 648-56-58 или оставляете заявку на сайте. Психолог проводит бесплатную 30-минутную беседу для оценки потребностей с учетом ярославских факторов.</li>
+            <li><strong>Диагностика:</strong> При согласии пациента проводится углубленная психологическая диагностика (тесты, интервью) для определения стадии зависимости, рисков с учетом промышленных вредностей и туристической нагрузки, ресурсов.</li>
+            <li><strong>Выбор формата:</strong> На основе диагностики врач и психолог предлагают 1-2 подходящих формата программы с учетом логистики Ярославля (например, выбор формата с учетом работы на производстве или туристического графика). Обсуждаются сроки, стоимость, условия.</li>
+            <li><strong>Заключение договора:</strong> Оформляются документы, гарантирующие конфиденциальность, права пациента, условия программы. Особенно важно для жителей крупных ЖК и гостей города.</li>
+            <li><strong>Начало программы:</strong> Назначается дата старта. При стационарном формате — организация переезда в центр с учетом логистики Ярославля и мостов через Волгу.</li>
+            <li><strong>Поддержка:</strong> На всех этапах пациент имеет доступ к куратору, экстренной помощи, группам поддержки в Ярославле с учетом местных триггеров.</li>
+          </ol>
+
+          <h2>Часто задаваемые вопросы по реабилитации в Ярославле</h2>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Сколько длится реабилитация в Ярославле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Зависит от формата и индивидуальных потребностей. Амбулаторная программа — от 3 месяцев, стационарная — от 3 до 12 месяцев. Пост-сопровождение — до 2 лет. Программы адаптируются под ярославские факторы риска.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли совмещать реабилитацию с работой в Ярославле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, для амбулаторного и полустационарного формата. График занятий гибкий: вечера, выходные, онлайн-сессии — особенно удобно для работников промышленных зон и туристов. Стационарная программа предполагает полный уход с работы на период лечения.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Анонимно ли это для жителей центра Ярославля?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Абсолютно. Мы не передаем данные в государственные органы. Информация об участии в программе не разглашается третьим лицам без согласия пациента. Особенно важно для жителей крупных ЖК и гостей города.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Что делать при угрозе срыва в Ярославле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Немедленно свяжитесь с куратором или диспетчером. Мы предоставим экстренную консультацию, поможем разработать план действий с учетом промышленных факторов и туристической нагрузки и при необходимости скорректируем программу.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Можно ли пригласить родственников на занятия в Ярославле?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, семейная терапия — часть программы. Родственники могут участвовать в отдельных сессиях для восстановления доверия и обучения поддержке с учетом ярославских условий жизни.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Как быстро можно начать реабилитацию в Дзержинском районе?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">После первичной консультации программа может стартовать в течение 1-3 дней. Группы поддержки проводятся в разных районах Ярославля, включая Дзержинский, с учетом логистики города.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Работаете ли вы с туристами и командировочными?<span class="faq-icon">▼</span></div>
+            <div class="faq-a">Да, мы работаем с жителями и гостями Ярославля. Реабилитация возможна для туристов и командировочных с учетом их графика. Анонимность гарантируется, документы могут оформляться под псевдонимом.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL CITIES BLOCK -->
+    <section class="cities-module" style="background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:60px 0; text-align:center;">
+      <div class="container">
+        <h2 class="section-title">Также выезжаем в соседние города</h2>
+        <p class="section-subtitle">Работаем без выходных. Подбираем ближайшую бригаду для минимального времени ожидания.</p>
+        <div class="cities-badges">
+          <a href="/yaroslavl.html" class="city-badge active">Ярославль (вы)</a>
+          <a href="/rybinsk.html" class="city-badge">Рыбинск</a>
+          <a href="/tutaev.html" class="city-badge">Тутаев</a>
+          <a href="/uglich.html" class="city-badge">Углич</a>
+          <a href="/pereslavl.html" class="city-badge">Переславль-Залесский</a>
+          <a href="/balashikha.html" class="city-badge">Балашиха</a>
+          <span class="city-more">+ ещё 50 городов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="margin-bottom:12px;">Инвестируйте в свою трезвую жизнь в Ярославле</h2>
+        <p style="max-width:650px; margin:0 auto 20px; opacity:0.95;">Реабилитация — это не расходы, а вклад в будущее. Звоните — поможем выбрать программу и начать путь к свободе с учетом местных факторов.</p>
+        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;" class="cta-buttons">
+          <a href="tel:+74996485658" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px;">📞 +7 (499) 648-56-58</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px; opacity:0.9;">⏱️ Среднее время ответа: 15 секунд | 🧠 Консультация: 30 минут бесплатно</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:+74996485658" class="sticky-btn" aria-label="Позвонить">📞</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Контакты</h4><a href="tel:+74996485658">+7 (499) 648-56-58</a><a href="mailto:info@tyspas.ru">info@tyspas.ru</a><p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p></div>
+        <div class="footer-col"><h4>Информация</h4><a href="/blog/">Блог и статьи</a><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="/soglasie.html">Согласие на обработку ПДн</a><a href="/contacts.html">Контакты</a></div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.</div>
+      <div class="footer-bottom">© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Реабилитация в Ярославле — Поддержка и профилактика срывов",
+    "description": "Профессиональная реабилитация в Ярославле после лечения алкогольной и наркотической зависимости. Группы поддержки, социальная адаптация, психологическое сопровождение.",
+    "url": "https://tyspas.ru/yaroslavl/reabilitatsiya.html",
+    "mainEntity": {
+      "@type": "MedicalProcedure",
+      "name": "Реабилитационная программа при зависимостях в Ярославле",
+      "procedureType": "Addiction Rehabilitation",
+      "location": {
+        "@type": "City",
+        "name": "Ярославль",
+        "containedInPlace": {"@type": "State", "name": "Ярославская область"}
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://tyspas.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Ярославль", "item": "https://tyspas.ru/yaroslavl.html"},
+        {"@type": "ListItem", "position": 3, "name": "Реабилитация"}
+      ]
+    },
+    "about": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Сколько длится реабилитация в Ярославле?", "acceptedAnswer": {"@type": "Answer", "text": "Амбулаторная — от 3 месяцев, стационарная — от 3 до 12 месяцев. Пост-сопровождение — до 2 лет."}},
+        {"@type": "Question", "name": "Можно ли совмещать реабилитацию с работой в Ярославле?", "acceptedAnswer": {"@type": "Answer", "text": "Да, для амбулаторного и полустационарного формата. График занятий гибкий: вечера, выходные, онлайн-сессии."}},
+        {"@type": "Question", "name": "Анонимно ли это для жителей центра Ярославля?", "acceptedAnswer": {"@type": "Answer", "text": "Абсолютно. Мы не передаем данные в государственные органы. Информация об участии в программе не разглашается."}},
+        {"@type": "Question", "name": "Что делать при угрозе срыва в Ярославле?", "acceptedAnswer": {"@type": "Answer", "text": "Немедленно свяжитесь с куратором. Предоставим экстренную консультацию и план действий."}},
+        {"@type": "Question", "name": "Можно ли пригласить родственников на занятия в Ярославле?", "acceptedAnswer": {"@type": "Answer", "text": "Да, семейная терапия — часть программы. Родственники могут участвовать в отдельных сессиях."}},
+        {"@type": "Question", "name": "Как быстро можно начать реабилитацию в Дзержинском районе?", "acceptedAnswer": {"@type": "Answer", "text": "После первичной консультации программа может стартовать в течение 1-3 дней."}},
+        {"@type": "Question", "name": "Работаете ли вы с туристами и командировочными?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем с жителями и гостями Ярославля. Реабилитация возможна для туристов и командировочных."}}
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); overlay.classList.toggle('active');
+      menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    overlay.addEventListener('click', () => { navMenu.classList.remove('active'); overlay.classList.remove('active'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; });
+
+    function toggleFaq(el) {
+      const a = el.nextElementSibling; const i = el.querySelector('.faq-icon');
+      a.classList.toggle('open'); i.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
