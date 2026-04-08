@@ -1,0 +1,157 @@
+# ============================================
+# Robots.txt для медицинского центра ТыСпас
+# Домен: https://tyspas.ru
+# Последнее обновление: 2024-02-20
+# ============================================
+
+# Указываем карту сайта
+Sitemap: https://tyspas.ru/sitemap.xml
+
+# ============================================
+# Правила для всех поисковых роботов
+# ============================================
+User-agent: *
+
+# Разрешаем индексацию основных разделов
+Allow: /
+Allow: /blog/
+Allow: /dmitrov/
+Allow: /korolev/
+Allow: /domodedovo/
+Allow: /balashikha/
+Allow: /pereslavl/
+Allow: /yaroslavl/
+Allow: /rybinsk/
+Allow: /uglich/
+Allow: /tutaev/
+
+# ============================================
+# Запрещаем индексацию служебных страниц
+# ============================================
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /assets/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /logs/
+
+# Запрещаем индексацию технических файлов
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# Запрещаем индексацию страниц с параметрами сортировки
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+Disallow: /*?utm_
+
+# ============================================
+# Googlebot (приоритет для Google)
+# ============================================
+User-agent: Googlebot
+Allow: /
+Allow: /blog/
+Allow: /dmitrov/
+Allow: /korolev/
+Allow: /domodedovo/
+Allow: /balashikha/
+Allow: /pereslavl/
+Allow: /yaroslavl/
+Allow: /rybinsk/
+Allow: /uglich/
+Allow: /tutaev/
+
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /*?utm_
+Disallow: /*?sort=
+
+# ============================================
+# Yandex (приоритет для Яндекса)
+# ============================================
+User-agent: Yandex
+Allow: /
+Allow: /blog/
+Allow: /dmitrov/
+Allow: /korolev/
+Allow: /domodedovo/
+Allow: /balashikha/
+Allow: /pereslavl/
+Allow: /yaroslavl/
+Allow: /rybinsk/
+Allow: /uglich/
+Allow: /tutaev/
+
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /*?utm_
+Disallow: /*?sort=
+
+# ============================================
+# Yandex Images (для индексации изображений)
+# ============================================
+User-agent: YandexImages
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Disallow: /admin/
+
+# ============================================
+# Bing
+# ============================================
+User-agent: Bingbot
+Allow: /
+Allow: /blog/
+Disallow: /admin/
+Disallow: /*?utm_
+
+# ============================================
+# Социальные сети и мессенджеры
+# ============================================
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ============================================
+# Блокировка агрессивных ботов
+# ============================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ============================================
+# Настройки сканирования
+# ============================================
+Crawl-delay: 1
+
+# ============================================
+# Главное зеркало сайта
+# ============================================
+Host: https://tyspas.ru

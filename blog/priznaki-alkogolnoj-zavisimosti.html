@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Признаки алкогольной зависимости: как распознать проблему на ранней стадии | ТыСпас</title>
+  <meta name="description" content="10 основных признаков алкоголизма. Тест на зависимость. Когда нужно обращаться к наркологу. Раннее распознавание — ключ к успешному лечению.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/blog/priznaki-alkogolnoj-zavisimosti.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Признаки алкогольной зависимости: как распознать проблему">
+  <meta property="og:description" content="10 основных признаков алкоголизма. Тест на зависимость. Когда нужно обращаться к наркологу.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tyspas.ru/blog/priznaki-alkogolnoj-zavisimosti.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="https://tyspas.ru/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+    .btn-outline:hover { background:#fff; color:var(--primary); }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    .mobile-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1001; opacity:0; visibility:hidden; transition:0.3s; }
+    .mobile-overlay.active { opacity:1; visibility:visible; }
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .top-bar { background:var(--gradient-1); color:#fff; padding:10px 0; font-size:13px; }
+    .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+    .top-item { display:flex; align-items:center; gap:6px; }
+    .license-badge { background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:20px; font-weight:600; }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); position:relative; padding:8px 0; }
+    .nav-menu > a:hover { color:var(--primary); }
+    .nav-menu > a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--primary); transition:0.25s; }
+    .nav-menu > a:hover::after { width:100%; }
+
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .phone:hover { color:var(--accent); }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; display:flex; align-items:center; gap:5px; justify-content:flex-end; }
+    .pulse-dot { width:6px; height:6px; background:var(--success); border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+    .mobile-toggle { display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text); padding:4px; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding:14px 0; background:var(--white); border-bottom:1px solid #e5e7eb; font-size:14px; color:var(--text-light); }
+    .breadcrumbs a { color:var(--primary); }
+    .breadcrumbs span { margin:0 6px; }
+
+    /* ARTICLE */
+    .article-header { background:var(--gradient-1); color:#fff; padding:80px 0 60px; text-align:center; }
+    .article-header h1 { font-size:2.5rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .article-meta { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; opacity:0.9; font-size:14px; }
+    .article-content { background:#fff; padding:60px 0; }
+    .article-wrapper { max-width:800px; margin:0 auto; }
+    .article-wrapper h2 { font-size:1.8rem; font-weight:800; color:var(--primary-dark); margin:40px 0 20px; }
+    .article-wrapper h3 { font-size:1.4rem; font-weight:700; color:var(--text); margin:30px 0 15px; }
+    .article-wrapper p { margin-bottom:16px; color:var(--text-light); font-size:16px; line-height:1.8; }
+    .article-wrapper ul, .article-wrapper ol { margin-left:24px; margin-bottom:20px; list-style:disc; color:var(--text-light); }
+    .article-wrapper li { margin-bottom:12px; font-size:16px; }
+    .article-wrapper ol { list-style:decimal; }
+    .warning-box { background:#fef2f2; border-left:4px solid #ef4444; padding:20px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .info-box { background:#eff6ff; border-left:4px solid var(--primary); padding:20px; margin:24px 0; border-radius:0 8px 8px 0; }
+    .highlight-text { font-weight:600; color:var(--text); }
+    .test-box { background:#f8fafc; padding:24px; border-radius:12px; margin:24px 0; border:1px solid #e5e7eb; }
+    .test-box h4 { color:var(--primary-dark); margin-bottom:16px; }
+    .cta-box { background:var(--gradient-1); color:#fff; padding:40px; border-radius:12px; margin:40px 0; text-align:center; }
+    .cta-box h3 { font-size:1.6rem; margin-bottom:16px; }
+    .cta-box p { opacity:0.95; margin-bottom:24px; }
+    .related-articles { background:#f8fafc; padding:24px; border-radius:12px; margin:40px 0; }
+    .related-articles h4 { color:var(--primary-dark); margin-bottom:16px; }
+    .related-articles ul { margin:0; }
+    .related-articles li { margin-bottom:12px; }
+    .related-articles a { color:var(--primary); font-weight:600; }
+
+    /* CTA */
+    .article-cta { background:var(--gradient-1); color:#fff; text-align:center; padding:80px 0; }
+    .article-cta h2 { font-size:2.2rem; font-weight:800; margin-bottom:16px; }
+    .article-cta p { max-width:600px; margin:0 auto 30px; opacity:0.95; font-size:18px; }
+    .cta-buttons { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+
+    /* FOOTER */
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 30px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); padding-left:4px; }
+    .disclaimer { background:#1e293b; padding:12px; border-radius:8px; margin:16px 0; font-size:11px; color:#94a3b8; line-height:1.5; border-left:3px solid #475569; }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* STICKY BUTTON */
+    .sticky-call { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+    .sticky-tooltip { background:rgba(0,0,0,0.85); color:#fff; padding:6px 12px; border-radius:6px; font-size:11px; font-weight:600; white-space:nowrap; opacity:0; transform:translateY(4px); transition:0.3s; pointer-events:none; }
+    .sticky-call:hover .sticky-tooltip { opacity:1; transform:translateY(0); }
+    .sticky-btn { width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 20px rgba(245,158,11,0.4); animation:pulse-ring 2s infinite; transition:0.3s; }
+    .sticky-btn:hover { transform:scale(1.08); box-shadow:0 6px 25px rgba(245,158,11,0.5); }
+    @keyframes pulse-ring { 0% { box-shadow:0 0 0 0 rgba(245,158,11,0.45); } 70% { box-shadow:0 0 0 14px rgba(245,158,11,0); } 100% { box-shadow:0 0 0 0 rgba(245,158,11,0); } }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .mobile-toggle { display:block; }
+      .nav-menu { position:fixed; top:0; right:-300px; width:280px; height:100vh; background:#fff; flex-direction:column; padding:70px 20px 20px; box-shadow:-5px 0 20px rgba(0,0,0,0.1); transition:0.35s cubic-bezier(0.4,0,0.2,1); z-index:1004; gap:0; align-items:stretch; }
+      .nav-menu.active { right:0; }
+      .nav-menu > a { padding:12px 0; border-bottom:1px solid #f1f5f9; }
+      .phone-block { display:none; }
+      .article-header h1 { font-size:2rem; }
+      .sticky-call { bottom:16px; right:16px; }
+      .sticky-btn { width:50px; height:50px; font-size:20px; }
+    }
+    @media(max-width:600px) {
+      section { padding:50px 0; }
+      .article-header { padding:60px 0 40px; }
+    }
+  </style>
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Признаки алкогольной зависимости: как распознать проблему на ранней стадии",
+    "description": "10 основных признаков алкоголизма. Тест на зависимость. Когда нужно обращаться к наркологу.",
+    "author": {
+      "@type": "Organization",
+      "name": "Медицинский центр ТыСпас"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ТыСпас",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tyspas.ru/logo.png"
+      }
+    },
+    "datePublished": "2024-01-15",
+    "dateModified": "2024-02-20",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://tyspas.ru/blog/priznaki-alkogolnoj-zavisimosti.html"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-item"><span class="license-badge">📋 Лицензия № ЛО-50-01-000000</span></div>
+      <div class="top-item">🔒 100% анонимно | 🚑 Выезд 24/7</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="https://tyspas.ru/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="https://tyspas.ru/blog/">Блог</a>
+        <a href="https://tyspas.ru/pricing.html">Цены</a>
+        <a href="https://tyspas.ru/contacts.html">Контакты</a>
+      </nav>
+
+      <div class="phone-block">
+        <a href="tel:88004448989" class="phone">8 800 444-89-89</a>
+        <div class="work-time"><span class="pulse-dot"></span> Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <div class="container"><a href="https://tyspas.ru/">Главная</a> <span>/</span> <a href="https://tyspas.ru/blog/">Блог</a> <span>/</span> <span>Признаки алкогольной зависимости</span></div>
+    </div>
+
+    <!-- ARTICLE HEADER -->
+    <section class="article-header">
+      <div class="container">
+        <h1>Признаки алкогольной зависимости: как распознать проблему на ранней стадии</h1>
+        <div class="article-meta">
+          <span>📅 15 января 2024</span>
+          <span>⏱️ Время чтения: 8 минут</span>
+          <span>👨‍⚕️ Эксперт: Врач-нарколог</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="article-content">
+      <div class="container">
+        <div class="article-wrapper">
+          
+          <p class="highlight-text" style="font-size:18px; color:var(--text); border-left:4px solid var(--accent); padding-left:16px; margin-bottom:24px;">
+            Алкогольная зависимость развивается постепенно, и многие не замечают, как эпизодическое употребление превращается в серьезную проблему. Раннее распознавание признаков зависимости — ключ к успешному лечению.
+          </p>
+
+          <h2>Что такое алкогольная зависимость?</h2>
+          <p>Алкогольная зависимость (алкоголизм) — это хроническое заболевание, характеризующееся физической и психологической зависимостью от этанола. По данным ВОЗ, в России от алкогольной зависимости страдает около 5% взрослого населения, но реальная цифра может быть выше из-за скрытых форм заболевания.</p>
+          
+          <p><span class="highlight-text">Зависимость формируется постепенно и проходит несколько стадий:</span></p>
+          <ul>
+            <li><strong>Начальная стадия:</strong> Увеличение толерантности к алкоголю, поиск поводов для выпивки</li>
+            <li><strong>Средняя стадия:</strong> Появление абстинентного синдрома (похмелья), потеря контроля над количеством выпитого</li>
+            <li><strong>Тяжелая стадия:</strong> Физическая зависимость, употребление для снятия абстиненции, деградация личности</li>
+          </ul>
+
+          <div class="info-box">
+            <strong>💡 Важно:</strong> Алкоголизм — это болезнь, а не слабость характера. Она поддается лечению на любой стадии, но чем раньше начата терапия, тем выше шансы на полное выздоровление.
+          </div>
+
+          <h2>10 основных признаков алкогольной зависимости</h2>
+          
+          <h3>1. Увеличение толерантности к алкоголю</h3>
+          <p>Человек замечает, что для достижения того же эффекта требуется все больше алкоголя. То, что раньше вызывало опьянение, теперь практически не действует. Это первый тревожный сигнал, который часто игнорируется.</p>
+
+          <h3>2. Потеря контроля над количеством выпитого</h3>
+          <p>Человек планирует выпить «немного», но в результате напивается до сильного опьянения. Обещания «только один бокал» систематически нарушаются. Это свидетельствует о формировании патологического влечения.</p>
+
+          <h3>3. Появление абстинентного синдрома (похмелья)</h3>
+          <p>Утреннее недомогание после употребления алкоголя становится все тяжелее:</p>
+          <ul>
+            <li>Тремор рук (дрожание)</li>
+            <li>Тошнота, рвота</li>
+            <li>Головная боль</li>
+            <li>Повышенная потливость</li>
+            <li>Тревога, раздражительность</li>
+            <li>Бессонница</li>
+          </ul>
+          <p>Желание «похмелиться» для облегчения состояния — характерный признак зависимости.</p>
+
+          <h3>4. Употребление алкоголя в одиночку</h3>
+          <p>Человек начинает пить в одиночестве, скрывая это от близких. Появляются тайные заначки алкоголя дома, на работе, в машине. Это свидетельствует о понимании проблемы, но неспособности справиться с ней.</p>
+
+          <h3>5. Пренебрежение обязанностями</h3>
+          <p>Алкоголь становится приоритетнее работы, семьи, хобби:</p>
+          <ul>
+            <li>Прогулы на работе или снижение продуктивности</li>
+            <li>Пренебрежение домашними обязанностями</li>
+            <li>Отказ от увлечений и хобби</li>
+            <li>Изоляция от друзей и семьи</li>
+          </ul>
+
+          <h3>6. Продолжение употребления несмотря на проблемы</h3>
+          <p>Человек продолжает пить, даже когда алкоголь вызывает очевидные проблемы:</p>
+          <ul>
+            <li>Конфликты в семье и на работе</li>
+            <li>Проблемы со здоровьем</li>
+            <li>Финансовые трудности</li>
+            <li>Правовые проблемы (ДТП, административные нарушения)</li>
+          </ul>
+
+          <h3>7. Изменение круга общения</h3>
+          <p>Человек начинает общаться преимущественно с теми, кто разделяет его отношение к алкоголю. Старые друзья, не употребляющие спиртное, отходят на второй план.</p>
+
+          <h3>8. Физические изменения</h3>
+          <p>Длительное употребление алкоголя оставляет следы на внешности:</p>
+          <ul>
+            <li>Покраснение лица, сосудистые звездочки</li>
+            <li>Отечность, особенно по утрам</li>
+            <li>Тремор рук</li>
+            <li>Резкое изменение веса (потеря или набор)</li>
+            <li>Ухудшение состояния кожи, волос, ногтей</li>
+          </ul>
+
+          <h3>9. Провалы в памяти</h3>
+          <p>После употребления алкоголя появляются «провалы» — человек не помнит, что происходило во время опьянения. Это свидетельствует о токсическом воздействии алкоголя на мозг.</p>
+
+          <h3>10. Неудачные попытки бросить или сократить употребление</h3>
+          <p>Человек неоднократно пытается бросить пить или сократить количество алкоголя, но безуспешно. Появляется чувство беспомощности перед зависимостью.</p>
+
+          <div class="warning-box">
+            <strong>⚠️ Важно:</strong> Наличие даже 2-3 из перечисленных признаков — повод обратиться к специалисту. Чем раньше начато лечение, тем выше шансы на полное выздоровление.
+          </div>
+
+          <h2>Тест на алкогольную зависимость (CAGE)</h2>
+          
+          <div class="test-box">
+            <h4>Простой тест из 4 вопросов, который помогает выявить проблему:</h4>
+            <ol>
+              <li><strong>C</strong> (Cut down) — Возникало ли у вас желание сократить употребление алкоголя?</li>
+              <li><strong>A</strong> (Annoyed) — Раздражали ли вас замечания других о вашем пьянстве?</li>
+              <li><strong>G</strong> (Guilty) — Чувствовали ли вы себя виноватым из-за употребления алкоголя?</li>
+              <li><strong>E</strong> (Eye-opener) — Употребляли ли вы алкоголь утром, чтобы «похмелиться» или снять похмелье?</li>
+            </ol>
+            <p style="margin-top:16px;"><span class="highlight-text">Результат:</span> Если вы ответили «да» на 2 и более вопроса — это серьезный повод обратиться к наркологу.</p>
+          </div>
+
+          <h2>Когда нужно срочно обращаться за помощью?</h2>
+          <p>Немедленная медицинская помощь необходима в следующих случаях:</p>
+          <ul>
+            <li>Алкогольные судороги (эпилептические припадки)</li>
+            <li>Алкогольный делирий («белая горячка») — галлюцинации, дезориентация, возбуждение</li>
+            <li>Неукротимая рвота с кровью</li>
+            <li>Потеря сознания</li>
+            <li>Желтая кожа и склеры (признак поражения печени)</li>
+          </ul>
+
+          <div class="info-box">
+            <strong>💡 Помните:</strong> Алкогольная зависимость — это заболевание, а не слабость характера. Обращение за помощью — это проявление силы и заботы о себе и своих близких.
+          </div>
+
+          <h2>Что делать, если вы заметили признаки зависимости?</h2>
+          <ol>
+            <li><strong>Не отрицайте проблему.</strong> Признание наличия проблемы — первый шаг к выздоровлению.</li>
+            <li><strong>Обратитесь к специалисту.</strong> Врач-нарколог проведет диагностику и подберет индивидуальную программу лечения.</li>
+            <li><strong>Не занимайтесь самолечением.</strong> Попытки самостоятельно бросить пить могут быть опасны для здоровья.</li>
+            <li><strong>Поддерживайте связь с близкими.</strong> Поддержка семьи и друзей важна для успешного лечения.</li>
+            <li><strong>Будьте готовы к изменениям.</strong> Лечение зависимости требует времени и усилий, но результат того стоит.</li>
+          </ol>
+
+          <div class="related-articles">
+            <h4>📖 Читайте также:</h4>
+            <ul>
+              <li><a href="https://tyspas.ru/blog/kak-motivirovat-blizkogo-na-lechenie.html">Как мотивировать близкого на лечение зависимости</a></li>
+              <li><a href="https://tyspas.ru/blog/metody-kodirovaniya-torpedo-esperal-dovzhenko.html">Методы кодирования: Торпедо, Эспераль, Довженко</a></li>
+              <li><a href="https://tyspas.ru/blog/profilaktika-sryvov-chto-delat-posle-kodirovki.html">Профилактика срывов: Что делать после кодировки?</a></li>
+            </ul>
+          </div>
+
+          <div class="cta-box">
+            <h3>Не оставайтесь один на один с проблемой</h3>
+            <p>Наши специалисты готовы помочь вам 24/7. Анонимно. Профессионально. С заботой о вашем здоровье.</p>
+            <a href="tel:88004448989" class="btn btn-primary" style="font-size:18px; padding:18px 36px; background:#fff; color:var(--primary);">📞 8 800 444-89-89</a>
+            <p style="margin-top:16px; font-size:14px; opacity:0.9;">Консультация бесплатная и ни к чему не обязывает</p>
+          </div>
+
+          <h2>Заключение</h2>
+          <p>Алкогольная зависимость — серьезное заболевание, но оно поддается лечению. Главное — вовремя распознать проблему и обратиться за профессиональной помощью. Не ждите, пока ситуация станет критической. Чем раньше начато лечение, тем выше шансы на полное выздоровление и возвращение к полноценной жизни.</p>
+          <p>Помните: вы не одни. Тысячи людей успешно справились с алкогольной зависимостью и вернулись к трезвой, счастливой жизни. Вы тоже можете это сделать!</p>
+          <p><span class="highlight-text">Первый шаг к выздоровлению — признание проблемы. Второй шаг — звонок специалисту.</span></p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="article-cta">
+      <div class="container">
+        <h2>Нужна помощь специалиста?</h2>
+        <p>Бесплатная консультация врача-нарколога. Анонимно. Круглосуточно.</p>
+        <div class="cta-buttons">
+          <a href="tel:88004448989" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px; padding:18px 36px;">📞 8 800 444-89-89</a>
+          <a href="https://tyspas.ru/contacts.html" class="btn btn-outline" style="font-size:18px; padding:18px 36px;">📍 Контакты</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STICKY BUTTON -->
+  <div class="sticky-call">
+    <div class="sticky-tooltip">📞 Круглосуточно, анонимно</div>
+    <a href="tel:88004448989" class="sticky-btn" aria-label="Позвонить">📞</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="tel:88004448989">8 800 444-89-89</a>
+          <a href="mailto:info@tyspas.ru">info@tyspas.ru</a>
+          <p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <a href="https://tyspas.ru/dmitrov/vyvod-iz-zapoya.html">Вывод из запоя</a>
+          <a href="https://tyspas.ru/dmitrov/kodirovanie.html">Кодирование</a>
+          <a href="https://tyspas.ru/dmitrov/reabilitatsiya.html">Реабилитация</a>
+          <a href="https://tyspas.ru/dmitrov/psikhologicheskaya-pomoshch.html">Психологическая помощь</a>
+        </div>
+        <div class="footer-col">
+          <h4>Города</h4>
+          <a href="https://tyspas.ru/dmitrov.html">Дмитров</a>
+          <a href="https://tyspas.ru/korolev.html">Королёв</a>
+          <a href="https://tyspas.ru/domodedovo.html">Домодедово</a>
+          <a href="https://tyspas.ru/balashikha.html">Балашиха</a>
+          <a href="https://tyspas.ru/pereslavl.html">Переславль</a>
+          <a href="https://tyspas.ru/yaroslavl.html">Ярославль</a>
+          <a href="https://tyspas.ru/rybinsk.html">Рыбинск</a>
+          <a href="https://tyspas.ru/uglich.html">Углич</a>
+          <a href="https://tyspas.ru/tutaev.html">Тутаев</a>
+        </div>
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <a href="https://tyspas.ru/blog/">Блог и статьи</a>
+          <a href="https://tyspas.ru/pricing.html">Цены</a>
+          <a href="https://tyspas.ru/privacy-policy.html">Политика конфиденциальности</a>
+          <a href="https://tyspas.ru/soglasie.html">Согласие на обработку ПДн</a>
+          <a href="https://tyspas.ru/contacts.html">Контакты</a>
+        </div>
+      </div>
+      <div class="disclaimer">
+        <strong>⚠️ Важно:</strong> Сайт носит информационный характер и не является публичной офертой. Услуги оказываются лицензированными медицинскими организациями-партнёрами. Имеются противопоказания. Необходима консультация специалиста. Самолечение может быть опасным для вашего здоровья.
+      </div>
+      <div class="footer-bottom">
+        © 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.
+      </div>
+    </div>
+  </footer>
+
+  <!-- YANDEX.METRIKA (замените 12345678 на ваш номер) -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(12345678, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/12345678" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <script>
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); overlay.classList.toggle('active');
+      menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    overlay.addEventListener('click', () => { navMenu.classList.remove('active'); overlay.classList.remove('active'); menuBtn.textContent = '☰'; document.body.style.overflow = ''; });
+  </script>
+</body>
+</html>

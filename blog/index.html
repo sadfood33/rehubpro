@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог о лечении зависимости | Статьи, советы, истории выздоровления | ТыСпас</title>
+  <meta name="description" content="Блог медицинского центра ТыСпас. Статьи о лечении алкоголизма и наркомании, советы для родственников, истории выздоровления, ответы на вопросы. Экспертная информация от врачей.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tyspas.ru/blog/index.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Блог о лечении зависимости | Статьи и советы">
+  <meta property="og:description" content="Экспертные статьи о лечении алкоголизма и наркомании. Советы врачей, истории пациентов, помощь родственникам.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tyspas.ru/blog/index.html">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-hover: 0 10px 20px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    .container { max-width:1240px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    section { padding:70px 0; }
+
+    /* HEADER */
+    header { background:rgba(255,255,255,0.98); backdrop-filter:blur(8px); border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:1002; transition:0.3s; }
+    header.scrolled { box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .header-main { padding:14px 0; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:22px; font-weight:800; color:var(--primary-dark); display:flex; align-items:center; gap:8px; }
+    .logo-icon { background:var(--primary); color:#fff; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+    .nav-menu { display:flex; align-items:center; gap:24px; }
+    .nav-menu > a { font-weight:600; font-size:15px; color:var(--text); }
+    .nav-menu > a:hover { color:var(--primary); }
+    .phone-block { text-align:right; }
+    .phone { font-size:17px; font-weight:800; color:var(--primary); display:block; }
+    .work-time { font-size:12px; color:var(--success); font-weight:600; }
+
+    /* HERO */
+    .blog-hero { background:var(--gradient-1); color:#fff; padding:80px 0 60px; text-align:center; }
+    .blog-hero h1 { font-size:2.5rem; font-weight:900; margin-bottom:16px; line-height:1.2; }
+    .blog-hero p { font-size:18px; max-width:700px; margin:0 auto; opacity:0.95; }
+
+    /* SEARCH & FILTER */
+    .blog-filters { background:#fff; padding:30px 0; border-bottom:1px solid #e5e7eb; }
+    .filter-container { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; align-items:center; }
+    .search-box { position:relative; flex:1; max-width:400px; }
+    .search-box input { width:100%; padding:12px 16px 12px 44px; border:1px solid #e5e7eb; border-radius:8px; font-size:15px; }
+    .search-box svg { position:absolute; left:14px; top:50%; transform:translateY(-50%); width:20px; height:20px; color:var(--text-light); }
+    .filter-btn { padding:10px 20px; border:1px solid #e5e7eb; border-radius:8px; background:#fff; cursor:pointer; font-size:14px; font-weight:600; transition:0.2s; }
+    .filter-btn:hover, .filter-btn.active { background:var(--primary); color:#fff; border-color:var(--primary); }
+
+    /* ARTICLE GRID */
+    .articles-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(350px, 1fr)); gap:24px; margin:40px 0; }
+    .article-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:var(--shadow); transition:0.3s; display:flex; flex-direction:column; }
+    .article-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-hover); }
+    .article-card .category { display:inline-block; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:600; margin:20px 20px 0; }
+    .category-diagnostika { background:#dbeafe; color:#1e40af; }
+    .category-psikhologiya { background:#fef3c7; color:#92400e; }
+    .category-lechenie { background:#d1fae5; color:#065f46; }
+    .category-pomoshch { background:#fee2e2; color:#991b1b; }
+    .category-rodstvennikam { background:#e0e7ff; color:#3730a3; }
+    .category-reabilitatsiya { background:#cffafe; color:#0e7490; }
+    .category-istorii { background:#fef9c3; color:#854d0e; }
+    .article-card h3 { font-size:1.3rem; font-weight:700; color:var(--primary-dark); margin:12px 20px 8px; line-height:1.4; }
+    .article-card p { color:var(--text-light); font-size:14px; margin:0 20px 16px; flex:1; }
+    .article-card .meta { display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-top:1px solid #e5e7eb; font-size:13px; color:var(--text-light); }
+    .article-card .read-more { color:var(--primary); font-weight:600; font-size:14px; display:flex; align-items:center; gap:6px; }
+    .article-card .read-more:hover { gap:10px; }
+
+    /* CTA SECTION */
+    .blog-cta { background:var(--gradient-1); color:#fff; text-align:center; padding:60px 0; }
+    .blog-cta h2 { font-size:2rem; font-weight:800; margin-bottom:16px; }
+    .blog-cta p { max-width:600px; margin:0 auto 24px; opacity:0.95; }
+
+    /* FOOTER */
+    footer { background:#0f172a; color:#cbd5e1; padding:50px 0 30px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px; margin-bottom:30px; }
+    .footer-col h4 { color:#fff; font-size:15px; margin-bottom:14px; font-weight:700; }
+    .footer-col a { display:block; padding:4px 0; font-size:13px; transition:0.2s; }
+    .footer-col a:hover { color:var(--accent); }
+    .footer-bottom { border-top:1px solid #1e293b; padding-top:14px; text-align:center; font-size:12px; }
+
+    /* RESPONSIVE */
+    @media(max-width:768px) {
+      .nav-menu { display:none; }
+      .blog-hero h1 { font-size:1.8rem; }
+      .articles-grid { grid-template-columns:1fr; }
+      .filter-container { flex-direction:column; }
+      .search-box { max-width:100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="container header-main">
+      <a href="/" class="logo"><div class="logo-icon">+</div><span>Ты<span style="color:var(--accent)">Спас</span></span></a>
+      <nav class="nav-menu">
+        <a href="/">Главная</a>
+        <a href="/blog/" class="active">Блог</a>
+        <a href="/pricing.html">Цены</a>
+        <a href="/contacts.html">Контакты</a>
+      </nav>
+      <div class="phone-block">
+        <a href="tel:+74996485658" class="phone">+7 (499) 648-56-58</a>
+        <div class="work-time">Круглосуточно, без выходных</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="blog-hero">
+      <div class="container">
+        <h1>Блог о лечении зависимости</h1>
+        <p>Экспертные статьи от врачей-наркологов и психологов. Практические советы, ответы на вопросы, истории выздоровления.</p>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="blog-filters">
+      <div class="container">
+        <div class="filter-container">
+          <div class="search-box">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" placeholder="Поиск статей..." id="searchInput">
+          </div>
+          <button class="filter-btn active" data-filter="all">Все статьи</button>
+          <button class="filter-btn" data-filter="diagnostika">Диагностика</button>
+          <button class="filter-btn" data-filter="psikhologiya">Психология</button>
+          <button class="filter-btn" data-filter="lechenie">Лечение</button>
+          <button class="filter-btn" data-filter="pomoshch">Помощь</button>
+          <button class="filter-btn" data-filter="rodstvennikam">Родственникам</button>
+          <button class="filter-btn" data-filter="reabilitatsiya">Реабилитация</button>
+          <button class="filter-btn" data-filter="istorii">Истории</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section>
+      <div class="container">
+        <div class="articles-grid">
+          
+          <!-- Article 1 -->
+          <article class="article-card" data-category="diagnostika">
+            <span class="category category-diagnostika">Диагностика</span>
+            <h3>Признаки алкогольной зависимости: как распознать проблему на ранней стадии</h3>
+            <p>10 основных признаков алкоголизма. Тест на зависимость. Когда нужно обращаться к наркологу. Раннее распознавание — ключ к успешному лечению.</p>
+            <div class="meta">
+              <span>📅 15 янв 2024</span>
+              <a href="/blog/priznaki-alkogolnoj-zavisimosti.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="article-card" data-category="psikhologiya">
+            <span class="category category-psikhologiya">Психология</span>
+            <h3>Как мотивировать близкого на лечение зависимости: эффективные методы и стратегии</h3>
+            <p>Как говорить с зависимым человеком? Ошибки родственников, рабочие стратегии мотивации. Консультация для родных.</p>
+            <div class="meta">
+              <span>📅 20 янв 2024</span>
+              <a href="/blog/kak-motivirovat-blizkogo-na-lechenie.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="article-card" data-category="pomoshch">
+            <span class="category category-pomoshch">Срочная помощь</span>
+            <h3>Белая горячка: симптомы, стадии и первая помощь при алкогольном делирии</h3>
+            <p>Угрожающее жизни состояние. Как распознать симптомы, оказать первую помощь, предотвратить осложнения. Когда вызывать скорую.</p>
+            <div class="meta">
+              <span>📅 25 янв 2024</span>
+              <a href="/blog/belaya-goryachka-simptomy-i-pervaya-pomoshch.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="article-card" data-category="lechenie">
+            <span class="category category-lechenie">Лечение</span>
+            <h3>Методы кодирования от алкоголизма: Торпедо, Эспераль, Довженко — сравнение и выбор</h3>
+            <p>Подробное сравнение популярных методов. Плюсы, минусы, противопоказания и сроки действия. Как выбрать подходящий метод.</p>
+            <div class="meta">
+              <span>📅 1 фев 2024</span>
+              <a href="/blog/metody-kodirovaniya-torpedo-esperal-dovzhenko.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="article-card" data-category="rodstvennikam">
+            <span class="category category-rodstvennikam">Родственникам</span>
+            <h3>Созависимость: Как не потерять себя, помогая близкому с зависимостью</h3>
+            <p>Признаки созависимости, стадии развития, практические стратегии самопомощи. Почему забота о себе — это не эгоизм.</p>
+            <div class="meta">
+              <span>📅 5 фев 2024</span>
+              <a href="/blog/sozavisimost-kak-ne-poteryat-sebya.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="article-card" data-category="reabilitatsiya">
+            <span class="category category-reabilitatsiya">Реабилитация</span>
+            <h3>Профилактика срывов: Что делать после кодировки для сохранения трезвости</h3>
+            <p>Практические стратегии сохранения трезвости. Работа с триггерами, план действий при тяге, роль поддержки.</p>
+            <div class="meta">
+              <span>📅 10 фев 2024</span>
+              <a href="/blog/profilaktika-sryvov-chto-delat-posle-kodirovki.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+          <!-- Article 7 -->
+          <article class="article-card" data-category="istorii">
+            <span class="category category-istorii">Истории</span>
+            <h3>Отзывы пациентов: Истории возвращения к жизни после лечения зависимости</h3>
+            <p>Реальные истории людей, преодолевших зависимость. Истории успеха, трудности пути, советы от тех, кто прошел этот путь.</p>
+            <div class="meta">
+              <span>📅 15 фев 2024</span>
+              <a href="/blog/otzyvy-patsientov-istorii-vozvrashcheniya.html" class="read-more">Читать статью →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="blog-cta">
+      <div class="container">
+        <h2>Не нашли ответ на свой вопрос?</h2>
+        <p>Наши врачи готовы ответить на ваши вопросы. Бесплатная консультация поможет разобраться в ситуации и наметить план действий.</p>
+        <a href="tel:+74996485658" class="btn btn-primary" style="background:#fff; color:var(--primary); font-size:18px;">📞 +7 (499) 648-56-58</a>
+        <p style="margin-top:16px; font-size:14px; opacity:0.9;">Консультация анонимна и ни к чему не обязывает</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="tel:+74996485658">+7 (499) 648-56-58</a>
+          <a href="mailto:info@tyspas.ru">info@tyspas.ru</a>
+          <p style="font-size:12px; margin-top:8px; opacity:0.7;">Круглосуточно, без выходных. Звонок бесплатный.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <a href="/vyvod-iz-zapoya.html">Вывод из запоя</a>
+          <a href="/kodirovanie.html">Кодирование</a>
+          <a href="/reabilitatsiya.html">Реабилитация</a>
+          <a href="/psikhologicheskaya-pomoshch.html">Психологическая помощь</a>
+        </div>
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <a href="/blog/">Блог и статьи</a>
+          <a href="/pricing.html">Цены</a>
+          <a href="/privacy-policy.html">Политика конфиденциальности</a>
+          <a href="/contacts.html">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Блог медицинского центра ТыСпас",
+    "description": "Экспертные статьи о лечении алкоголизма и наркомании. Советы врачей, истории пациентов, помощь родственникам.",
+    "url": "https://tyspas.ru/blog/index.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ТыСпас",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tyspas.ru/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <script>
+    // Header scroll
+    window.addEventListener('scroll', () => document.getElementById('siteHeader').classList.toggle('scrolled', scrollY > 10));
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const articleCards = document.querySelectorAll('.article-card');
+
+    searchInput.addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      articleCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const description = card.querySelector('p').textContent.toLowerCase();
+        if (title.includes(searchTerm) || description.includes(searchTerm)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Filter articles
+        const filter = btn.dataset.filter;
+        articleCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

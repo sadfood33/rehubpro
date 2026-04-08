@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спасибо за заявку! | ТыСпас</title>
+  <meta name="description" content="Ваша заявка успешно отправлена. Наш специалист свяжется с вами в ближайшее время.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://tyspas.ru/spasibo.html">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; min-height:100vh; display:flex; flex-direction:column; }
+    a { text-decoration:none; color:inherit; }
+    
+    .thank-you-section { flex:1; display:flex; align-items:center; justify-content:center; padding:80px 20px; text-align:center; }
+    .thank-you-content { max-width:600px; }
+    .success-icon { width:100px; height:100px; background:var(--success); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 30px; font-size:50px; color:#fff; animation:scaleIn 0.5s ease-out; }
+    @keyframes scaleIn { 0% { transform:scale(0); } 50% { transform:scale(1.1); } 100% { transform:scale(1); } }
+    .thank-you-title { font-size:2rem; font-weight:800; color:var(--primary-dark); margin-bottom:16px; }
+    .thank-you-text { font-size:18px; color:var(--text-light); margin-bottom:30px; }
+    .next-steps { background:#fff; padding:30px; border-radius:12px; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom:30px; text-align:left; }
+    .next-steps h3 { font-size:1.2rem; font-weight:700; color:var(--primary-dark); margin-bottom:16px; }
+    .next-steps ol { margin-left:20px; }
+    .next-steps li { margin-bottom:12px; color:var(--text-light); }
+    .contact-info { background:#eff6ff; padding:20px; border-radius:8px; margin-bottom:30px; }
+    .contact-info p { margin-bottom:8px; }
+    .contact-info strong { color:var(--primary-dark); }
+    .thank-you-buttons { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid var(--primary); color:var(--primary); }
+    .btn-outline:hover { background:var(--primary); color:#fff; }
+
+    footer { background:#0f172a; color:#cbd5e1; padding:30px 0; text-align:center; font-size:13px; }
+    
+    @media(max-width:600px) {
+      .thank-you-title { font-size:1.5rem; }
+      .thank-you-buttons { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="thank-you-section">
+    <div class="thank-you-content">
+      <div class="success-icon">✓</div>
+      <h1 class="thank-you-title">Спасибо за заявку!</h1>
+      <p class="thank-you-text">Ваша заявка успешно отправлена. Наш специалист свяжется с вами в ближайшее время.</p>
+      
+      <div class="next-steps">
+        <h3>Что будет дальше:</h3>
+        <ol>
+          <li><strong>В течение 5-10 минут</strong> — мы перезвоним вам для уточнения деталей</li>
+          <li><strong>В течение 30 минут</strong> — бригада будет у вас (по Москве и области)</li>
+          <li><strong>Консультация</strong> — врач оценит состояние и подберёт программу лечения</li>
+        </ol>
+      </div>
+
+      <div class="contact-info">
+        <p><strong>📞 Телефон:</strong> <a href="tel:+74996485658" style="color:var(--primary);">+7 (499) 648-56-58</a></p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:info@tyspas.ru" style="color:var(--primary);">info@tyspas.ru</a></p>
+        <p><strong>⏰ Режим работы:</strong> Круглосуточно, без выходных</p>
+      </div>
+
+      <div class="thank-you-buttons">
+        <a href="/" class="btn btn-primary">🏠 На главную</a>
+        <a href="tel:+74996485658" class="btn btn-outline">📞 Позвонить сейчас</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

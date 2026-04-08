@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница не найдена — 404 | ТыСпас</title>
+  <meta name="description" content="Страница, которую вы ищете, не найдена. Вернитесь на главную или воспользуйтесь поиском.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://tyspas.ru/404.html">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af;
+      --accent: #f59e0b; --success: #10b981; --text: #1f2937; --text-light: #6b7280;
+      --bg: #f8fafc; --white: #ffffff;
+      --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',system-ui,sans-serif; }
+    body { color:var(--text); background:var(--bg); line-height:1.6; min-height:100vh; display:flex; flex-direction:column; }
+    a { text-decoration:none; color:inherit; }
+    
+    .error-section { flex:1; display:flex; align-items:center; justify-content:center; padding:80px 20px; text-align:center; }
+    .error-content { max-width:600px; }
+    .error-code { font-size:8rem; font-weight:900; color:var(--primary); line-height:1; margin-bottom:20px; }
+    .error-title { font-size:2rem; font-weight:800; color:var(--primary-dark); margin-bottom:16px; }
+    .error-text { font-size:18px; color:var(--text-light); margin-bottom:30px; }
+    .error-buttons { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:8px; font-weight:700; font-size:15px; cursor:pointer; transition:0.3s; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; box-shadow:0 4px 12px rgba(245,158,11,0.3); }
+    .btn-primary:hover { background:#d97706; transform:translateY(-2px); }
+    .btn-outline { background:transparent; border:2px solid var(--primary); color:var(--primary); }
+    .btn-outline:hover { background:var(--primary); color:#fff; }
+    
+    .quick-links { margin-top:40px; padding-top:40px; border-top:1px solid #e5e7eb; }
+    .quick-links h3 { font-size:1.2rem; font-weight:700; margin-bottom:16px; color:var(--primary-dark); }
+    .quick-links-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; }
+    .quick-links a { padding:12px 16px; background:#fff; border-radius:8px; border:1px solid #e5e7eb; transition:0.2s; display:block; }
+    .quick-links a:hover { border-color:var(--primary); color:var(--primary); transform:translateX(4px); }
+
+    footer { background:#0f172a; color:#cbd5e1; padding:30px 0; text-align:center; font-size:13px; }
+    
+    @media(max-width:600px) {
+      .error-code { font-size:5rem; }
+      .error-title { font-size:1.5rem; }
+      .error-buttons { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="error-section">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Страница не найдена</h1>
+      <p class="error-text">К сожалению, страница, которую вы ищете, не существует или была перемещена. Возможно, вы ввели неверный адрес.</p>
+      
+      <div class="error-buttons">
+        <a href="https://tyspas.ru/" class="btn btn-primary">🏠 На главную</a>
+        <a href="tel:+74996485658" class="btn btn-outline">📞 Позвонить нам</a>
+      </div>
+
+      <div class="quick-links">
+        <h3>Возможно, вы искали:</h3>
+        <div class="quick-links-grid">
+          <a href="https://tyspas.ru/blog/">📖 Блог и статьи</a>
+          <a href="https://tyspas.ru/pricing.html">💰 Цены на услуги</a>
+          <a href="https://tyspas.ru/contacts.html">📍 Контакты</a>
+          <a href="https://tyspas.ru/korolev.html">🏥 Королёв</a>
+          <a href="https://tyspas.ru/domodedovo.html">✈️ Домодедово</a>
+          <a href="https://tyspas.ru/yaroslavl.html">🏛️ Ярославль</a>
+          <a href="https://tyspas.ru/dmitrov.html">🏙️ Дмитров</a>
+          <a href="https://tyspas.ru/balashikha.html">🌆 Балашиха</a>
+          <a href="https://tyspas.ru/pereslavl.html">⛪ Переславль</a>
+          <a href="https://tyspas.ru/rybinsk.html">🌊 Рыбинск</a>
+          <a href="https://tyspas.ru/uglich.html">🏰 Углич</a>
+          <a href="https://tyspas.ru/tutaev.html">⛪ Тутаев</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2024-2026 «ТыСпас». Все права защищены. Лицензия № ЛО-50-01-000000.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
